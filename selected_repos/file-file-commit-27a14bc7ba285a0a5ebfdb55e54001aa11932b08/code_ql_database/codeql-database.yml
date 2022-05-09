@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: "/Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-27a14bc7ba285a0a5ebfdb55e54001aa11932b08/file"
+baselineLinesOfCode: 12522
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  sha: "36fadd29849b8087af9f4586f89dbf74ea45be67"
+  cliVersion: "2.8.0"
+  creationTime: "2022-03-30T21:29:46.091783Z"

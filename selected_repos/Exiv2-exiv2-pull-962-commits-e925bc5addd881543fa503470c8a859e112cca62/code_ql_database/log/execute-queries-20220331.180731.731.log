@@ -1,0 +1,1070 @@
+[2022-03-31 18:07:31] This is codeql execute queries -J-Xmx4096M --off-heap-ram=0 --verbosity=progress --logdir=/Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/log --evaluator-log-level=1 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --no-rerun --output=/Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/results -- /Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/db-cpp /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190
+[2022-03-31 18:07:31] Calling plumbing command: codeql resolve queries --format=json -- /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190
+[2022-03-31 18:07:32] [SPAMMY] resolve queries> Scanning for QL files at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190.
+[2022-03-31 18:07:32] [SPAMMY] resolve queries> Found 12 QL files in /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190.
+[2022-03-31 18:07:32] Plumbing command codeql resolve queries completed:
+                      [
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticUncontrolled.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticWithExtremeValues.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ComparisonWithWiderType.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/IntegerOverflowTainted.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/TaintedAllocationSize.ql"
+                      ]
+[2022-03-31 18:07:32] Creating executor with 1 threads.
+[2022-03-31 18:07:32] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql --format=json
+[2022-03-31 18:07:32] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql.
+[2022-03-31 18:07:32] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:32] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:32] [DETAILS] resolve library-path> Resolving library dependencies from /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/qlpack.yml.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src resolved OK.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/ArithmeticTainted.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql --format=json
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src found in cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/ArithmeticUncontrolled.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql --format=json
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src found in cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql --format=json
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src found in cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/ComparisonWithWiderType.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql --format=json
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src found in cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/IntegerOverflowTainted.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql --format=json
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src found in cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/TaintedAllocationSize.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql --format=json
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src found in cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/selected/ArithmeticTainted.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticUncontrolled.ql --format=json
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticUncontrolled.ql.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src found in cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/selected/ArithmeticUncontrolled.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticWithExtremeValues.ql --format=json
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticWithExtremeValues.ql.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src found in cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/selected/ArithmeticWithExtremeValues.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ComparisonWithWiderType.ql --format=json
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ComparisonWithWiderType.ql.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src found in cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/selected/ComparisonWithWiderType.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/IntegerOverflowTainted.ql --format=json
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/IntegerOverflowTainted.ql.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src found in cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/selected/IntegerOverflowTainted.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/TaintedAllocationSize.ql --format=json
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/TaintedAllocationSize.ql.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src found in cache.
+[2022-03-31 18:07:33] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-03-31 18:07:33] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/selected/TaintedAllocationSize.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:07:33] Calling plumbing command: codeql resolve ml-models --search-path=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src:/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib:/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers --insecurely-execute-ml-model-checksums=
+[2022-03-31 18:07:33] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/
+[2022-03-31 18:07:33] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/
+[2022-03-31 18:07:33] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers/
+[2022-03-31 18:07:33] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/repos/codeql-home/codeql/.codeqlmanifest.json
+[2022-03-31 18:07:33] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/repos/codeql-home/
+[2022-03-31 18:07:33] [DETAILS] resolve ml-models> Not scanning from /Users/owura/repos/codeql-home/codeql which is already done.
+[2022-03-31 18:07:33] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/repos/codeql-home/codeql-repo/.codeqlmanifest.json
+[2022-03-31 18:07:33] Plumbing command codeql resolve ml-models completed:
+                      {
+                        "models" : [ ]
+                      }
+[2022-03-31 18:07:33] [PROGRESS] execute queries> Compiling query plan for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql.
+[2022-03-31 18:07:33] [DETAILS] execute queries> Resolving imports for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql.
+[2022-03-31 18:07:34] Resolved file set for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql hashes to f39787ccefbbceaf41003b5a66d3ea801efd0d4c.
+[2022-03-31 18:07:34] [DETAILS] execute queries> Checking QL for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql.
+[2022-03-31 18:07:34] ExternalModuleBindingPass ...
+[2022-03-31 18:07:36] ExternalModuleBindingPass time: 00:01.434
+[2022-03-31 18:07:36] QLPredicateSynthesiser ...
+[2022-03-31 18:07:36] QLPredicateSynthesiser time: 00:00.024
+[2022-03-31 18:07:36] DeclarationBindingPass ...
+[2022-03-31 18:07:36] DeclarationBindingPass time: 00:00.123
+[2022-03-31 18:07:36] Fixed point time ...
+[2022-03-31 18:07:36] Fixed point time time: 00:00.649
+[2022-03-31 18:07:36] ReferenceBindingPass ...
+[2022-03-31 18:07:37] ReferenceBindingPass time: 00:00.110
+[2022-03-31 18:07:37] EntityTypeUpdateBindingPass ...
+[2022-03-31 18:07:37] EntityTypeUpdateBindingPass time: 00:00.102
+[2022-03-31 18:07:37] DeclarationBindingPass ...
+[2022-03-31 18:07:37] DeclarationBindingPass time: 00:00.077
+[2022-03-31 18:07:37] PredicateBodyBindingPass ...
+[2022-03-31 18:07:37] PredicateBodyBindingPass time: 00:00.689
+[2022-03-31 18:07:37] LanguagePragmaPropagationPass ...
+[2022-03-31 18:07:37] LanguagePragmaPropagationPass time: 00:00.036
+[2022-03-31 18:07:37] Ambiguity checks ...
+[2022-03-31 18:07:38] Ambiguity checks time: 00:00.125
+[2022-03-31 18:07:38] Ql checks ...
+[2022-03-31 18:07:38] Ql checks time: 00:00.652
+[2022-03-31 18:07:40] Compilation pipeline
+[2022-03-31 18:07:41] Type Inference ...
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: Best number of iterations,Maximum number of runs,Number of BDD variables,Size of BDD for typefacts
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,12,12
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,26,29
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,9,9
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,761,2323
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,339,789
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,12,12
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,171,538
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,71,71
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,82,82
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,7,8
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,15,25
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,46,240
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,72,126
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,18,21
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,9,9
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,14,20
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,6,7
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,38,39
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,5,6
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,10,14
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,22,24
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:41] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:07:43] Type Inference time: 00:02.378
+[2022-03-31 18:07:43] Binding Checks ...
+[2022-03-31 18:07:44] Binding Checks time: 00:00.494
+[2022-03-31 18:07:45] [DETAILS] execute queries> Optimizing /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql.
+[2022-03-31 18:07:45] Processing compilation pipeline
+[2022-03-31 18:07:45] Started compiling a query
+[2022-03-31 18:07:45] Initialising compiler...
+[2022-03-31 18:07:45] 	 ... compiler initialised
+[2022-03-31 18:07:45] About to start query optimisation
+[2022-03-31 18:07:45] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:45] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:46] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:46] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:46] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:46] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:46] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:46] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:47] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:47] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:47] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:47] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:47] Compilation cache miss for 19335f7b2941a3a7bcfea2b242d94cec4f970bfa.
+[2022-03-31 18:07:54] Stored compiled program for 19335f7b2941a3a7bcfea2b242d94cec4f970bfa.
+[2022-03-31 18:07:54] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:54] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:54] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:55] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:55] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:55] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:55] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:55] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:55] Compilation cache hit - skipping compilation.
+[2022-03-31 18:07:55] Compilation cache miss for 1dc996f4595c40a95122addf4fff6ac499e9b916.
+[2022-03-31 18:07:57] Stored compiled program for 1dc996f4595c40a95122addf4fff6ac499e9b916.
+[2022-03-31 18:07:57] Compilation cache miss for ed6bad98b8236601c1b66ad7a681d638fefd551d.
+[2022-03-31 18:08:00] Stored compiled program for ed6bad98b8236601c1b66ad7a681d638fefd551d.
+[2022-03-31 18:08:00] Compilation cache miss for dbaeb5e7b4b5c68e3ea2dfc123a90708303879a8.
+[2022-03-31 18:08:03] Stored compiled program for dbaeb5e7b4b5c68e3ea2dfc123a90708303879a8.
+[2022-03-31 18:08:03] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:03] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:03] Compilation cache miss for 43472386911c458bf257f516631cac9d5bbecdd6.
+[2022-03-31 18:08:08] Stored compiled program for 43472386911c458bf257f516631cac9d5bbecdd6.
+[2022-03-31 18:08:08] CSV_COMPILATION: NONE,MISC,RA_TRANSLATION,OPTIMISATIONS
+[2022-03-31 18:08:08] CSV_COMPILATION: 2714,2616,1970,15907
+[2022-03-31 18:08:08] [PROGRESS] execute queries> [1/12 comp 35.4s] Compiled /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql.
+[2022-03-31 18:08:08] [PROGRESS] execute queries> Compiling query plan for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql.
+[2022-03-31 18:08:08] [DETAILS] execute queries> Resolving imports for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql.
+[2022-03-31 18:08:09] Resolved file set for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql hashes to 46f591c697a0d60c762da7a82f7af66fc72beb2e.
+[2022-03-31 18:08:09] [DETAILS] execute queries> Compilation cache hit for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql.
+[2022-03-31 18:08:09] [PROGRESS] execute queries> [2/12] Found in cache: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql.
+[2022-03-31 18:08:09] [PROGRESS] execute queries> Compiling query plan for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql.
+[2022-03-31 18:08:09] [DETAILS] execute queries> Resolving imports for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql.
+[2022-03-31 18:08:09] Resolved file set for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql hashes to 5d5696ecda336d8fa6b710d8470d6afd44c9d741.
+[2022-03-31 18:08:09] [DETAILS] execute queries> Checking QL for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql.
+[2022-03-31 18:08:09] ExternalModuleBindingPass ...
+[2022-03-31 18:08:10] ExternalModuleBindingPass time: 00:00.771
+[2022-03-31 18:08:10] QLPredicateSynthesiser ...
+[2022-03-31 18:08:10] QLPredicateSynthesiser time: 00:00.019
+[2022-03-31 18:08:10] DeclarationBindingPass ...
+[2022-03-31 18:08:10] DeclarationBindingPass time: 00:00.112
+[2022-03-31 18:08:10] Fixed point time ...
+[2022-03-31 18:08:11] Fixed point time time: 00:00.274
+[2022-03-31 18:08:11] ReferenceBindingPass ...
+[2022-03-31 18:08:11] ReferenceBindingPass time: 00:00.057
+[2022-03-31 18:08:11] EntityTypeUpdateBindingPass ...
+[2022-03-31 18:08:11] EntityTypeUpdateBindingPass time: 00:00.036
+[2022-03-31 18:08:11] DeclarationBindingPass ...
+[2022-03-31 18:08:11] DeclarationBindingPass time: 00:00.041
+[2022-03-31 18:08:11] PredicateBodyBindingPass ...
+[2022-03-31 18:08:11] PredicateBodyBindingPass time: 00:00.270
+[2022-03-31 18:08:11] LanguagePragmaPropagationPass ...
+[2022-03-31 18:08:11] LanguagePragmaPropagationPass time: 00:00.011
+[2022-03-31 18:08:11] Ambiguity checks ...
+[2022-03-31 18:08:11] Ambiguity checks time: 00:00.054
+[2022-03-31 18:08:11] Ql checks ...
+[2022-03-31 18:08:11] Ql checks time: 00:00.306
+[2022-03-31 18:08:12] Compilation pipeline
+[2022-03-31 18:08:12] Type Inference ...
+[2022-03-31 18:08:12] CSV_TYPE_HIERARCHY: Best number of iterations,Maximum number of runs,Number of BDD variables,Size of BDD for typefacts
+[2022-03-31 18:08:12] CSV_TYPE_HIERARCHY: 0,0,12,12
+[2022-03-31 18:08:12] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2022-03-31 18:08:12] CSV_TYPE_HIERARCHY: 0,0,26,29
+[2022-03-31 18:08:12] CSV_TYPE_HIERARCHY: 0,0,9,9
+[2022-03-31 18:08:12] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,761,2323
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,339,789
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,12,12
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,171,538
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,71,71
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,82,82
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,7,8
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,15,25
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,46,240
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,72,126
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,18,21
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,9,9
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,14,20
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,6,7
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,38,39
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,5,6
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,10,14
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,22,24
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:13] Type Inference time: 00:00.953
+[2022-03-31 18:08:13] Binding Checks ...
+[2022-03-31 18:08:14] Binding Checks time: 00:00.106
+[2022-03-31 18:08:14] [DETAILS] execute queries> Optimizing /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql.
+[2022-03-31 18:08:14] Processing compilation pipeline
+[2022-03-31 18:08:14] Started compiling a query
+[2022-03-31 18:08:14] Initialising compiler...
+[2022-03-31 18:08:14] 	 ... compiler initialised
+[2022-03-31 18:08:14] About to start query optimisation
+[2022-03-31 18:08:14] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:14] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:14] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:14] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:14] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:15] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:15] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:15] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:15] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:16] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:16] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:16] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:16] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:16] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:16] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:16] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:16] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:16] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:16] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:16] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:17] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:17] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:17] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:17] Compilation cache miss for b1ba164cd2d97d584f82d16ecfa52732efe2218a.
+[2022-03-31 18:08:19] Stored compiled program for b1ba164cd2d97d584f82d16ecfa52732efe2218a.
+[2022-03-31 18:08:19] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:19] Compilation cache miss for c8c7f71381e9d85435f6ff08a146177ee525594c.
+[2022-03-31 18:08:22] Stored compiled program for c8c7f71381e9d85435f6ff08a146177ee525594c.
+[2022-03-31 18:08:22] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:22] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:22] Compilation cache miss for 62972a425cfc525f5a0caa93d06b7d8ec901b61a.
+[2022-03-31 18:08:22] Stored compiled program for 62972a425cfc525f5a0caa93d06b7d8ec901b61a.
+[2022-03-31 18:08:22] CSV_COMPILATION: NONE,MISC,RA_TRANSLATION,OPTIMISATIONS
+[2022-03-31 18:08:22] CSV_COMPILATION: 1597,1781,501,4317
+[2022-03-31 18:08:23] [PROGRESS] execute queries> [3/12 comp 13.5s] Compiled /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql.
+[2022-03-31 18:08:23] [PROGRESS] execute queries> Compiling query plan for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql.
+[2022-03-31 18:08:23] [DETAILS] execute queries> Resolving imports for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql.
+[2022-03-31 18:08:23] Resolved file set for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql hashes to e6ef4cfe6acf1d0409e746ee8722c5768df0fef7.
+[2022-03-31 18:08:23] [DETAILS] execute queries> Compilation cache hit for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql.
+[2022-03-31 18:08:23] [PROGRESS] execute queries> [4/12] Found in cache: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql.
+[2022-03-31 18:08:23] [PROGRESS] execute queries> Compiling query plan for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql.
+[2022-03-31 18:08:23] [DETAILS] execute queries> Resolving imports for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql.
+[2022-03-31 18:08:23] Resolved file set for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql hashes to e6251ac2aec7b46a285f374cc4f621d99cd09b3f.
+[2022-03-31 18:08:23] [DETAILS] execute queries> Checking QL for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql.
+[2022-03-31 18:08:23] ExternalModuleBindingPass ...
+[2022-03-31 18:08:24] ExternalModuleBindingPass time: 00:00.501
+[2022-03-31 18:08:24] QLPredicateSynthesiser ...
+[2022-03-31 18:08:24] QLPredicateSynthesiser time: 00:00.006
+[2022-03-31 18:08:24] DeclarationBindingPass ...
+[2022-03-31 18:08:24] DeclarationBindingPass time: 00:00.047
+[2022-03-31 18:08:24] Fixed point time ...
+[2022-03-31 18:08:24] Fixed point time time: 00:00.278
+[2022-03-31 18:08:24] ReferenceBindingPass ...
+[2022-03-31 18:08:24] ReferenceBindingPass time: 00:00.028
+[2022-03-31 18:08:24] EntityTypeUpdateBindingPass ...
+[2022-03-31 18:08:24] EntityTypeUpdateBindingPass time: 00:00.021
+[2022-03-31 18:08:24] DeclarationBindingPass ...
+[2022-03-31 18:08:24] DeclarationBindingPass time: 00:00.022
+[2022-03-31 18:08:24] PredicateBodyBindingPass ...
+[2022-03-31 18:08:24] PredicateBodyBindingPass time: 00:00.219
+[2022-03-31 18:08:24] LanguagePragmaPropagationPass ...
+[2022-03-31 18:08:24] LanguagePragmaPropagationPass time: 00:00.014
+[2022-03-31 18:08:24] Ambiguity checks ...
+[2022-03-31 18:08:24] Ambiguity checks time: 00:00.055
+[2022-03-31 18:08:24] Ql checks ...
+[2022-03-31 18:08:25] Ql checks time: 00:00.283
+[2022-03-31 18:08:25] Compilation pipeline
+[2022-03-31 18:08:26] Type Inference ...
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: Best number of iterations,Maximum number of runs,Number of BDD variables,Size of BDD for typefacts
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,12,12
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,26,29
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,9,9
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,760,2294
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,38,39
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,339,824
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,171,538
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,71,71
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,82,82
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,7,8
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,15,25
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,46,246
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,72,126
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,18,21
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,9,9
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,14,20
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,6,7
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,5,6
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,10,14
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,11,11
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,22,24
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:26] Type Inference time: 00:00.850
+[2022-03-31 18:08:26] Binding Checks ...
+[2022-03-31 18:08:26] Binding Checks time: 00:00.078
+[2022-03-31 18:08:27] [DETAILS] execute queries> Optimizing /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql.
+[2022-03-31 18:08:27] Processing compilation pipeline
+[2022-03-31 18:08:27] Started compiling a query
+[2022-03-31 18:08:27] Initialising compiler...
+[2022-03-31 18:08:27] 	 ... compiler initialised
+[2022-03-31 18:08:27] About to start query optimisation
+[2022-03-31 18:08:27] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:27] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:27] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:27] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:27] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:27] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:28] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:28] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:28] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:28] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:28] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:28] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:28] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:28] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:29] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:29] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:29] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:29] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:29] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:29] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:29] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:29] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:29] Compilation cache miss for b4472c8ab0d30ec4e8149d735f5e0619fbd8bbe8.
+[2022-03-31 18:08:31] Stored compiled program for b4472c8ab0d30ec4e8149d735f5e0619fbd8bbe8.
+[2022-03-31 18:08:31] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:31] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:31] Compilation cache miss for e712c9e8beecd4f9587cde832db2ae1d634e6a5b.
+[2022-03-31 18:08:34] Stored compiled program for e712c9e8beecd4f9587cde832db2ae1d634e6a5b.
+[2022-03-31 18:08:34] Compilation cache miss for 614068a022c5a1d8e0c6471fd22a596cec1557e6.
+[2022-03-31 18:08:34] Stored compiled program for 614068a022c5a1d8e0c6471fd22a596cec1557e6.
+[2022-03-31 18:08:34] CSV_COMPILATION: NONE,MISC,RA_TRANSLATION,OPTIMISATIONS
+[2022-03-31 18:08:34] CSV_COMPILATION: 1388,1277,379,4034
+[2022-03-31 18:08:34] [PROGRESS] execute queries> [5/12 comp 11.5s] Compiled /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql.
+[2022-03-31 18:08:34] [PROGRESS] execute queries> Compiling query plan for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql.
+[2022-03-31 18:08:34] [DETAILS] execute queries> Resolving imports for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql.
+[2022-03-31 18:08:34] Resolved file set for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql hashes to 4395dd57d200c103dc8e52aac97b6956275b119a.
+[2022-03-31 18:08:34] [DETAILS] execute queries> Checking QL for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql.
+[2022-03-31 18:08:35] ExternalModuleBindingPass ...
+[2022-03-31 18:08:35] ExternalModuleBindingPass time: 00:00.389
+[2022-03-31 18:08:35] QLPredicateSynthesiser ...
+[2022-03-31 18:08:35] QLPredicateSynthesiser time: 00:00.005
+[2022-03-31 18:08:35] DeclarationBindingPass ...
+[2022-03-31 18:08:35] DeclarationBindingPass time: 00:00.036
+[2022-03-31 18:08:35] Fixed point time ...
+[2022-03-31 18:08:35] Fixed point time time: 00:00.195
+[2022-03-31 18:08:35] ReferenceBindingPass ...
+[2022-03-31 18:08:35] ReferenceBindingPass time: 00:00.047
+[2022-03-31 18:08:35] EntityTypeUpdateBindingPass ...
+[2022-03-31 18:08:35] EntityTypeUpdateBindingPass time: 00:00.028
+[2022-03-31 18:08:35] DeclarationBindingPass ...
+[2022-03-31 18:08:35] DeclarationBindingPass time: 00:00.041
+[2022-03-31 18:08:35] PredicateBodyBindingPass ...
+[2022-03-31 18:08:36] PredicateBodyBindingPass time: 00:00.249
+[2022-03-31 18:08:36] LanguagePragmaPropagationPass ...
+[2022-03-31 18:08:36] LanguagePragmaPropagationPass time: 00:00.020
+[2022-03-31 18:08:36] Ambiguity checks ...
+[2022-03-31 18:08:36] Ambiguity checks time: 00:00.055
+[2022-03-31 18:08:36] Ql checks ...
+[2022-03-31 18:08:36] Ql checks time: 00:00.314
+[2022-03-31 18:08:37] Compilation pipeline
+[2022-03-31 18:08:37] Type Inference ...
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: Best number of iterations,Maximum number of runs,Number of BDD variables,Size of BDD for typefacts
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,12,12
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,26,29
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,9,9
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,760,2294
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,38,39
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,339,824
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,171,538
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,71,71
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,82,82
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,7,8
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,15,25
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,46,246
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,72,126
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,18,21
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,9,9
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,14,20
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,6,7
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,5,6
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,10,14
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,11,11
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,8,10
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,22,24
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:37] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2022-03-31 18:08:38] Type Inference time: 00:00.904
+[2022-03-31 18:08:38] Binding Checks ...
+[2022-03-31 18:08:38] Binding Checks time: 00:00.084
+[2022-03-31 18:08:38] [DETAILS] execute queries> Optimizing /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql.
+[2022-03-31 18:08:38] Processing compilation pipeline
+[2022-03-31 18:08:38] Started compiling a query
+[2022-03-31 18:08:38] Initialising compiler...
+[2022-03-31 18:08:38] 	 ... compiler initialised
+[2022-03-31 18:08:38] About to start query optimisation
+[2022-03-31 18:08:38] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:38] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:38] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:38] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:39] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:39] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:39] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:39] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:39] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:39] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:39] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:39] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:39] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:40] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:40] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:40] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:40] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:40] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:40] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:40] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:40] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:40] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:40] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:40] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:41] Compilation cache hit - skipping compilation.
+[2022-03-31 18:08:41] Compilation cache miss for 69f530a45745d603b5401cfa8f763ae1d04399f1.
+[2022-03-31 18:08:44] Stored compiled program for 69f530a45745d603b5401cfa8f763ae1d04399f1.
+[2022-03-31 18:08:44] CSV_COMPILATION: NONE,MISC,RA_TRANSLATION,OPTIMISATIONS
+[2022-03-31 18:08:44] CSV_COMPILATION: 1176,1300,297,2972
+[2022-03-31 18:08:44] [PROGRESS] execute queries> [6/12 comp 9.9s] Compiled /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql.
+[2022-03-31 18:08:44] [PROGRESS] execute queries> Compiling query plan for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql.
+[2022-03-31 18:08:44] [DETAILS] execute queries> Resolving imports for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql.
+[2022-03-31 18:08:44] Resolved file set for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql hashes to 64024d1fa669fcd35ea2aea84ed02bc5d6d499a4.
+[2022-03-31 18:08:44] [DETAILS] execute queries> Checking QL for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql.
+[2022-03-31 18:08:44] ExternalModuleBindingPass ...
+[2022-03-31 18:08:45] ExternalModuleBindingPass time: 00:00.365
+[2022-03-31 18:08:45] QLPredicateSynthesiser ...
+[2022-03-31 18:08:45] QLPredicateSynthesiser time: 00:00.004
+[2022-03-31 18:08:45] DeclarationBindingPass ...
+[2022-03-31 18:08:45] DeclarationBindingPass time: 00:00.025
+[2022-03-31 18:08:45] Fixed point time ...
+[2022-03-31 18:08:45] Fixed point time time: 00:00.177
+[2022-03-31 18:08:45] ReferenceBindingPass ...
+[2022-03-31 18:08:45] ReferenceBindingPass time: 00:00.037
+[2022-03-31 18:08:45] EntityTypeUpdateBindingPass ...
+[2022-03-31 18:08:45] EntityTypeUpdateBindingPass time: 00:00.023
+[2022-03-31 18:08:45] DeclarationBindingPass ...
+[2022-03-31 18:08:45] DeclarationBindingPass time: 00:00.032
+[2022-03-31 18:08:45] PredicateBodyBindingPass ...
+[2022-03-31 18:08:45] PredicateBodyBindingPass time: 00:00.201
+[2022-03-31 18:08:45] LanguagePragmaPropagationPass ...
+[2022-03-31 18:08:45] LanguagePragmaPropagationPass time: 00:00.023
+[2022-03-31 18:08:45] Ambiguity checks ...
+[2022-03-31 18:08:45] Ambiguity checks time: 00:00.051
+[2022-03-31 18:08:45] Ql checks ...
+[2022-03-31 18:08:46] Ql checks time: 00:00.228
+[2022-03-31 18:08:46] [ERROR] execute queries> ERROR: Could not resolve module Bounded (/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql:20,8-15)
+[2022-03-31 18:08:46] [ERROR] execute queries> ERROR: Could not resolve predicate bounded/1 (/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql:43,27-34)
+[2022-03-31 18:08:46] Cancelling {1}ArithmeticTainted.ql with a CancellationException and message /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql had compilation errors..
+[2022-03-31 18:08:46] Cancelling {2}ArithmeticUncontrolled.ql with a CancellationException and message /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql had compilation errors..
+[2022-03-31 18:08:46] Cancelling {3}ArithmeticWithExtremeValues.ql with a CancellationException and message /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql had compilation errors..
+[2022-03-31 18:08:46] Cancelling {4}ComparisonWithWiderType.ql with a CancellationException and message /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql had compilation errors..
+[2022-03-31 18:08:46] Cancelling {5}IntegerOverflowTainted.ql with a CancellationException and message /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql had compilation errors..
+[2022-03-31 18:08:46] Cancelling {6}TaintedAllocationSize.ql with a CancellationException and message /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/selected/ArithmeticTainted.ql had compilation errors..
+[2022-03-31 18:08:46] Sequence stamp origin is -6472496592265288959
+[2022-03-31 18:08:46] Pausing evaluation to close the cache at sequence stamp o+0
+[2022-03-31 18:08:46] The disk cache is freshly trimmed; leave it be.
+[2022-03-31 18:08:46] Unpausing evaluation
+[2022-03-31 18:08:46] Pausing evaluation to sync to disk at sequence stamp o+1
+[2022-03-31 18:08:46] Unpausing evaluation
+[2022-03-31 18:08:46] Exiting with code 2

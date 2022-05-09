@@ -1,0 +1,106 @@
+[2022-03-29 18:20:25] This is codeql database create ../code_ql_database --language=cpp --command=make
+[2022-03-29 18:20:25] Log file was started late.
+[2022-03-29 18:20:25] [PROGRESS] database create> Initializing database at /Users/owura/Repos/codeql_eval/proj_repos/curl-curl-commit-ba1dbd78e5f1ed67c1b8d37ac89d90e5e330b628/code_ql_database.
+[2022-03-29 18:20:25] Running plumbing command: codeql database init --language=cpp --source-root=/Users/owura/Repos/codeql_eval/proj_repos/curl-curl-commit-ba1dbd78e5f1ed67c1b8d37ac89d90e5e330b628/curl --allow-missing-source-root=false --allow-already-existing -- /Users/owura/Repos/codeql_eval/proj_repos/curl-curl-commit-ba1dbd78e5f1ed67c1b8d37ac89d90e5e330b628/code_ql_database
+[2022-03-29 18:20:25] [PROGRESS] database init> Counting lines of code in /Users/owura/Repos/codeql_eval/proj_repos/curl-curl-commit-ba1dbd78e5f1ed67c1b8d37ac89d90e5e330b628/curl
+[2022-03-29 18:20:25] [PROGRESS] database init> Resolving extractor cpp.
+[2022-03-29 18:20:25] Calling plumbing command: codeql resolve languages --format=json
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from /Users/owura/repos/codeql-home/codeql/.codeqlmanifest.json
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/go/codeql-extractor.yml.
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/python/codeql-extractor.yml.
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/java/codeql-extractor.yml.
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/html/codeql-extractor.yml.
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/xml/codeql-extractor.yml.
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/properties/codeql-extractor.yml.
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/cpp/codeql-extractor.yml.
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/csv/codeql-extractor.yml.
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/csharp/codeql-extractor.yml.
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/javascript/codeql-extractor.yml.
+[2022-03-29 18:20:25] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/ruby/codeql-extractor.yml.
+[2022-03-29 18:20:25] Plumbing command codeql resolve languages completed:
+                      {
+                        "extractors" : {
+                          "go" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/go"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/python"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis.\n",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/html"
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/xml"
+                            }
+                          ],
+                          "properties" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/properties"
+                            }
+                          ],
+                          "cpp" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/cpp"
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/csv"
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/csharp"
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/javascript"
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/ruby"
+                            }
+                          ]
+                        }
+                      }
+[2022-03-29 18:20:25] [DETAILS] database init> Found candidate extractor root for cpp: /Users/owura/repos/codeql-home/codeql/cpp.
+[2022-03-29 18:20:25] [PROGRESS] database init> Successfully loaded extractor C/C++ (cpp) from /Users/owura/repos/codeql-home/codeql/cpp.
+[2022-03-29 18:20:26] [PROGRESS] database init> Created skeleton CodeQL database at /Users/owura/Repos/codeql_eval/proj_repos/curl-curl-commit-ba1dbd78e5f1ed67c1b8d37ac89d90e5e330b628/code_ql_database. This in-progress database is ready to be populated by an extractor.
+[2022-03-29 18:20:26] Plumbing command codeql database init completed.
+[2022-03-29 18:20:26] [PROGRESS] database create> Running build command: [make]
+[2022-03-29 18:20:26] Running plumbing command: codeql database trace-command --working-dir=/Users/owura/Repos/codeql_eval/proj_repos/curl-curl-commit-ba1dbd78e5f1ed67c1b8d37ac89d90e5e330b628/curl --index-traceless-dbs --no-db-cluster -- /Users/owura/Repos/codeql_eval/proj_repos/curl-curl-commit-ba1dbd78e5f1ed67c1b8d37ac89d90e5e330b628/code_ql_database make
+[2022-03-29 18:20:26] Setting up tracing from specification at /Users/owura/repos/codeql-home/codeql/cpp/tools/osx64/compiler-tracing.spec.
+[2022-03-29 18:20:26] [PROGRESS] database trace-command> Running command in /Users/owura/Repos/codeql_eval/proj_repos/curl-curl-commit-ba1dbd78e5f1ed67c1b8d37ac89d90e5e330b628/curl: [make]
+[2022-03-29 18:20:26] [build-stderr] make: *** No targets specified and no makefile found.  Stop.
+[2022-03-29 18:20:26] [ERROR] Spawned process exited abnormally (code 2; tried to run: [/Users/owura/repos/codeql-home/codeql/tools/osx64/preload_tracer, make])
+[2022-03-29 18:20:26] Exception caught at top level: Exit status 2 from command: [make]
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:220)
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:86)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:110)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:162)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:151)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:500)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:205)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:214)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:98)

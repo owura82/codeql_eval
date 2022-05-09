@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: "/Users/owura/Repos/codeql_eval/proj_repos/Matroska-Org-libebml-commit-b66ca475be967547af9a3784e720fbbacd381be6/libebml"
+baselineLinesOfCode: 4366
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  sha: "b66ca475be967547af9a3784e720fbbacd381be6"
+  cliVersion: "2.8.0"
+  creationTime: "2022-03-21T22:54:44.933344Z"

@@ -1,0 +1,785 @@
+[2022-03-30 17:47:55] This is codeql database create ../code_ql_database --language=cpp --command=make
+[2022-03-30 17:47:55] Log file was started late.
+[2022-03-30 17:47:55] [PROGRESS] database create> Initializing database at /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database.
+[2022-03-30 17:47:55] Running plumbing command: codeql database init --language=cpp --source-root=/Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/file --allow-missing-source-root=false --allow-already-existing -- /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database
+[2022-03-30 17:47:55] [PROGRESS] database init> Counting lines of code in /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/file
+[2022-03-30 17:47:55] [PROGRESS] database init> Resolving extractor cpp.
+[2022-03-30 17:47:55] Calling plumbing command: codeql resolve languages --format=json
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from /Users/owura/repos/codeql-home/codeql/.codeqlmanifest.json
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/go/codeql-extractor.yml.
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/python/codeql-extractor.yml.
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/java/codeql-extractor.yml.
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/html/codeql-extractor.yml.
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/xml/codeql-extractor.yml.
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/properties/codeql-extractor.yml.
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/cpp/codeql-extractor.yml.
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/csv/codeql-extractor.yml.
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/csharp/codeql-extractor.yml.
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/javascript/codeql-extractor.yml.
+[2022-03-30 17:47:55] [DETAILS] resolve languages> Parsing /Users/owura/repos/codeql-home/codeql/ruby/codeql-extractor.yml.
+[2022-03-30 17:47:55] Plumbing command codeql resolve languages completed:
+                      {
+                        "extractors" : {
+                          "go" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/go"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/python"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis.\n",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/html"
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/xml"
+                            }
+                          ],
+                          "properties" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/properties"
+                            }
+                          ],
+                          "cpp" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/cpp"
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/csv"
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/csharp"
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/javascript"
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "/Users/owura/repos/codeql-home/codeql/ruby"
+                            }
+                          ]
+                        }
+                      }
+[2022-03-30 17:47:55] [DETAILS] database init> Found candidate extractor root for cpp: /Users/owura/repos/codeql-home/codeql/cpp.
+[2022-03-30 17:47:55] [PROGRESS] database init> Successfully loaded extractor C/C++ (cpp) from /Users/owura/repos/codeql-home/codeql/cpp.
+[2022-03-30 17:47:55] [PROGRESS] database init> Created skeleton CodeQL database at /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database. This in-progress database is ready to be populated by an extractor.
+[2022-03-30 17:47:55] Plumbing command codeql database init completed.
+[2022-03-30 17:47:55] [PROGRESS] database create> Running build command: [make]
+[2022-03-30 17:47:55] Running plumbing command: codeql database trace-command --working-dir=/Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/file --index-traceless-dbs --no-db-cluster -- /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database make
+[2022-03-30 17:47:55] Setting up tracing from specification at /Users/owura/repos/codeql-home/codeql/cpp/tools/osx64/compiler-tracing.spec.
+[2022-03-30 17:47:55] [PROGRESS] database trace-command> Running command in /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/file: [make]
+[2022-03-30 17:47:55] [build-stdout] /Applications/Xcode.app/Contents/Developer/usr/bin/make  all-recursive
+[2022-03-30 17:47:56] [build-stdout] Making all in src
+[2022-03-30 17:47:56] [build-stdout] sed -e "s/X.YY/$(echo 5.20 | tr -d .)/" < ../src/magic.h.in > magic.h
+[2022-03-30 17:47:56] [build-stdout] /Applications/Xcode.app/Contents/Developer/usr/bin/make  all-am
+[2022-03-30 17:47:56] [build-stdout]   CC       file.o
+[2022-03-30 17:48:10] [build-stdout]   CC       magic.lo
+[2022-03-30 17:48:12] [build-stdout]   CC       apprentice.lo
+[2022-03-30 17:48:13] [build-stdout]   CC       softmagic.lo
+[2022-03-30 17:48:14] [build-stdout]   CC       ascmagic.lo
+[2022-03-30 17:48:14] [build-stdout]   CC       encoding.lo
+[2022-03-30 17:48:15] [build-stdout]   CC       compress.lo
+[2022-03-30 17:48:15] [build-stdout]   CC       is_tar.lo
+[2022-03-30 17:48:16] [build-stdout]   CC       readelf.lo
+[2022-03-30 17:48:17] [build-stdout]   CC       print.lo
+[2022-03-30 17:48:17] [build-stdout]   CC       fsmagic.lo
+[2022-03-30 17:48:18] [build-stdout]   CC       funcs.lo
+[2022-03-30 17:48:18] [build-stdout]   CC       apptype.lo
+[2022-03-30 17:48:19] [build-stdout]   CC       cdf.lo
+[2022-03-30 17:48:20] [build-stdout]   CC       cdf_time.lo
+[2022-03-30 17:48:20] [build-stdout]   CC       readcdf.lo
+[2022-03-30 17:48:21] [build-stdout]   CCLD     libmagic.la
+[2022-03-30 17:48:22] [build-stdout]   CCLD     file
+[2022-03-30 17:48:23] [build-stdout] Making all in magic
+[2022-03-30 17:48:24] [build-stdout] ../src/file -C -m magic
+[2022-03-30 17:48:24] [build-stdout] Making all in tests
+[2022-03-30 17:48:24] [build-stdout] make[2]: Nothing to be done for `all'.
+[2022-03-30 17:48:24] [build-stdout] Making all in doc
+[2022-03-30 17:48:25] [build-stdout] sed -e s@__CSECTION__@1@g \
+[2022-03-30 17:48:25] [build-stdout] 	    -e s@__FSECTION__@4@g \
+[2022-03-30 17:48:25] [build-stdout] 	    -e s@__VERSION__@5.20@g \
+[2022-03-30 17:48:25] [build-stdout] 	    -e s@__MAGIC__@/usr/local/share/misc/magic@g ./file.man > file.1
+[2022-03-30 17:48:25] [build-stdout] sed -e s@__CSECTION__@1@g \
+[2022-03-30 17:48:25] [build-stdout] 	    -e s@__FSECTION__@4@g \
+[2022-03-30 17:48:25] [build-stdout] 	    -e s@__VERSION__@5.20@g \
+[2022-03-30 17:48:25] [build-stdout] 	    -e s@__MAGIC__@/usr/local/share/misc/magic@g ./magic.man > magic.4
+[2022-03-30 17:48:25] [build-stdout] sed -e s@__CSECTION__@1@g \
+[2022-03-30 17:48:25] [build-stdout] 	    -e s@__FSECTION__@4@g \
+[2022-03-30 17:48:25] [build-stdout] 	    -e s@__VERSION__@5.20@g \
+[2022-03-30 17:48:25] [build-stdout] 	    -e s@__MAGIC__@/usr/local/share/misc/magic@g ./libmagic.man > libmagic.3
+[2022-03-30 17:48:25] [build-stdout] Making all in python
+[2022-03-30 17:48:25] [build-stdout] make[2]: Nothing to be done for `all'.
+[2022-03-30 17:48:25] [build-stdout] make[2]: Nothing to be done for `all-am'.
+[2022-03-30 17:48:25] Plumbing command codeql database trace-command completed.
+[2022-03-30 17:48:25] [PROGRESS] database create> Finalizing database at /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database.
+[2022-03-30 17:48:25] Running plumbing command: codeql database finalize --mode=normal --no-db-cluster -- /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database
+[2022-03-30 17:48:25] [PROGRESS] database finalize> Running TRAP import for CodeQL database at /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database...
+[2022-03-30 17:48:25] Running plumbing command: codeql dataset import --dbscheme=/Users/owura/repos/codeql-home/codeql/cpp/semmlecode.cpp.dbscheme -- /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database/db-cpp /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database/trap/cpp
+[2022-03-30 17:48:25] Clearing disk cache since the version file /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database/db-cpp/default/cache/version does not exist
+[2022-03-30 17:48:25] Tuple pool not found. Clearing relations with cached strings
+[2022-03-30 17:48:25] Trimming disk cache at /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database/db-cpp/default/cache in mode brutal.
+[2022-03-30 17:48:25] Sequence stamp origin is -6472872604122332782
+[2022-03-30 17:48:25] Pausing evaluation to hard-clear memory at sequence stamp o+0
+[2022-03-30 17:48:25] Unpausing evaluation
+[2022-03-30 17:48:25] Pausing evaluation to quickly trim disk at sequence stamp o+1
+[2022-03-30 17:48:25] Unpausing evaluation
+[2022-03-30 17:48:25] Pausing evaluation to zealously trim disk at sequence stamp o+2
+[2022-03-30 17:48:25] Unpausing evaluation
+[2022-03-30 17:48:25] Trimming completed (6ms): Purged everything.
+[2022-03-30 17:48:25] Scanning for files in /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database/trap/cpp
+[2022-03-30 17:48:25] Grouping TRAPs by link target
+[2022-03-30 17:48:25] Scanning assert.h.306c6a2d.trap (apprentice.c.f6d781d0_0.trap.tar.br) (1 of 241)
+[2022-03-30 17:48:25] Scanning dirent.h.92506982.trap (apprentice.c.f6d781d0_0.trap.tar.br) (2 of 241)
+[2022-03-30 17:48:25] Scanning dirent.h.5e8d649b.trap (apprentice.c.f6d781d0_0.trap.tar.br) (3 of 241)
+[2022-03-30 17:48:25] Scanning apprentice.c.f6d781d0.trap (apprentice.c.f6d781d0_0.trap.tar.br) (4 of 241)
+[2022-03-30 17:48:25] Scanning apptype.c.05b6f4fe.trap (apptype.c.05b6f4fe_0.trap.tar.br) (5 of 241)
+[2022-03-30 17:48:25] Scanning memory.h.28d1762f.trap (ascmagic.c.628b42a4_0.trap.tar.br) (6 of 241)
+[2022-03-30 17:48:25] Scanning ascmagic.c.628b42a4.trap (ascmagic.c.628b42a4_0.trap.tar.br) (7 of 241)
+[2022-03-30 17:48:25] Scanning cdf.c.c3c15bfc.trap (cdf.c.c3c15bfc_0.trap.tar.br) (8 of 241)
+[2022-03-30 17:48:25] Scanning cdf_time.c.dfafc750.trap (cdf_time.c.dfafc750_0.trap.tar.br) (9 of 241)
+[2022-03-30 17:48:25] Scanning ioccom.h.042b8aff.trap (compress.c.718df00d_0.trap.tar.br) (10 of 241)
+[2022-03-30 17:48:25] Scanning ttycom.h.6365c1ad.trap (compress.c.718df00d_0.trap.tar.br) (11 of 241)
+[2022-03-30 17:48:25] Scanning filio.h.c40ba584.trap (compress.c.718df00d_0.trap.tar.br) (12 of 241)
+[2022-03-30 17:48:25] Scanning sockio.h.ee2449ba.trap (compress.c.718df00d_0.trap.tar.br) (13 of 241)
+[2022-03-30 17:48:25] Scanning ioctl.h.c6988863.trap (compress.c.718df00d_0.trap.tar.br) (14 of 241)
+[2022-03-30 17:48:25] Scanning zconf.h.d2c05dce.trap (compress.c.718df00d_0.trap.tar.br) (15 of 241)
+[2022-03-30 17:48:25] Scanning zlib.h.ec423fe7.trap (compress.c.718df00d_0.trap.tar.br) (16 of 241)
+[2022-03-30 17:48:25] Scanning compress.c.718df00d.trap (compress.c.718df00d_0.trap.tar.br) (17 of 241)
+[2022-03-30 17:48:25] Scanning encoding.c.dc61dfa9.trap (encoding.c.dc61dfa9_0.trap.tar.br) (18 of 241)
+[2022-03-30 17:48:25] Scanning cpp_predefined.acb19af8.trap (file.c.be374214_0.trap.tar.br) (19 of 241)
+[2022-03-30 17:48:25] Scanning config.h.44d29ae0.trap (file.c.be374214_0.trap.tar.br) (20 of 241)
+[2022-03-30 17:48:25] Scanning _symbol_aliasing.h.3bc0a392.trap (file.c.be374214_0.trap.tar.br) (21 of 241)
+[2022-03-30 17:48:25] Scanning _posix_availability.h.1fc5d244.trap (file.c.be374214_0.trap.tar.br) (22 of 241)
+[2022-03-30 17:48:25] Scanning cdefs.h.de3d8cf6.trap (file.c.be374214_0.trap.tar.br) (23 of 241)
+[2022-03-30 17:48:25] Scanning AvailabilityVersions.h.9514edd9.trap (file.c.be374214_0.trap.tar.br) (24 of 241)
+[2022-03-30 17:48:25] Scanning AvailabilityInternal.h.4ae5c96f.trap (file.c.be374214_0.trap.tar.br) (25 of 241)
+[2022-03-30 17:48:25] Scanning Availability.h.eacf3b72.trap (file.c.be374214_0.trap.tar.br) (26 of 241)
+[2022-03-30 17:48:25] Scanning _types.h.0da9112b.trap (file.c.be374214_0.trap.tar.br) (27 of 241)
+[2022-03-30 17:48:25] Scanning _types.h.8b34173a.trap (file.c.be374214_0.trap.tar.br) (28 of 241)
+[2022-03-30 17:48:25] Scanning _pthread_types.h.ec3c0e88.trap (file.c.be374214_0.trap.tar.br) (29 of 241)
+[2022-03-30 17:48:25] Scanning _types.h.0a309489.trap (file.c.be374214_0.trap.tar.br) (30 of 241)
+[2022-03-30 17:48:25] Scanning _types.h.ad2d34f2.trap (file.c.be374214_0.trap.tar.br) (31 of 241)
+[2022-03-30 17:48:25] Scanning _int8_t.h.f29290cb.trap (file.c.be374214_0.trap.tar.br) (32 of 241)
+[2022-03-30 17:48:25] Scanning _int16_t.h.0efc7dab.trap (file.c.be374214_0.trap.tar.br) (33 of 241)
+[2022-03-30 17:48:25] Scanning _int32_t.h.6962392d.trap (file.c.be374214_0.trap.tar.br) (34 of 241)
+[2022-03-30 17:48:25] Scanning _int64_t.h.536f90e3.trap (file.c.be374214_0.trap.tar.br) (35 of 241)
+[2022-03-30 17:48:25] Scanning _u_int8_t.h.552cf7b4.trap (file.c.be374214_0.trap.tar.br) (36 of 241)
+[2022-03-30 17:48:25] Scanning _u_int16_t.h.253a9b79.trap (file.c.be374214_0.trap.tar.br) (37 of 241)
+[2022-03-30 17:48:25] Scanning _u_int32_t.h.3c64ebfb.trap (file.c.be374214_0.trap.tar.br) (38 of 241)
+[2022-03-30 17:48:25] Scanning _u_int64_t.h.cbd81c97.trap (file.c.be374214_0.trap.tar.br) (39 of 241)
+[2022-03-30 17:48:25] Scanning types.h.816d5ac7.trap (file.c.be374214_0.trap.tar.br) (40 of 241)
+[2022-03-30 17:48:25] Scanning _intptr_t.h.4730365d.trap (file.c.be374214_0.trap.tar.br) (41 of 241)
+[2022-03-30 17:48:25] Scanning _uintptr_t.h.645528a4.trap (file.c.be374214_0.trap.tar.br) (42 of 241)
+[2022-03-30 17:48:25] Scanning types.h.7da8c317.trap (file.c.be374214_0.trap.tar.br) (43 of 241)
+[2022-03-30 17:48:25] Scanning types.h.29642447.trap (file.c.be374214_0.trap.tar.br) (44 of 241)
+[2022-03-30 17:48:25] Scanning _va_list.h.29e4b6a2.trap (file.c.be374214_0.trap.tar.br) (45 of 241)
+[2022-03-30 17:48:25] Scanning _size_t.h.01dad05b.trap (file.c.be374214_0.trap.tar.br) (46 of 241)
+[2022-03-30 17:48:25] Scanning _null.h.042b8aff.trap (file.c.be374214_0.trap.tar.br) (47 of 241)
+[2022-03-30 17:48:25] Scanning stdio.h.e8e0597d.trap (file.c.be374214_0.trap.tar.br) (48 of 241)
+[2022-03-30 17:48:25] Scanning _stdio.h.feb536bc.trap (file.c.be374214_0.trap.tar.br) (49 of 241)
+[2022-03-30 17:48:25] Scanning _ctermid.h.eb4b2ae1.trap (file.c.be374214_0.trap.tar.br) (50 of 241)
+[2022-03-30 17:48:25] Scanning _off_t.h.35683854.trap (file.c.be374214_0.trap.tar.br) (51 of 241)
+[2022-03-30 17:48:25] Scanning _ssize_t.h.e58412bd.trap (file.c.be374214_0.trap.tar.br) (52 of 241)
+[2022-03-30 17:48:25] Scanning _common.h.06bc851e.trap (file.c.be374214_0.trap.tar.br) (53 of 241)
+[2022-03-30 17:48:25] Scanning _stdio.h.e1cc065d.trap (file.c.be374214_0.trap.tar.br) (54 of 241)
+[2022-03-30 17:48:25] Scanning stdio.h.9d32ed4c.trap (file.c.be374214_0.trap.tar.br) (55 of 241)
+[2022-03-30 17:48:25] Scanning _errno_t.h.fbe65fbd.trap (file.c.be374214_0.trap.tar.br) (56 of 241)
+[2022-03-30 17:48:25] Scanning errno.h.45ad544b.trap (file.c.be374214_0.trap.tar.br) (57 of 241)
+[2022-03-30 17:48:25] Scanning errno.h.309dc923.trap (file.c.be374214_0.trap.tar.br) (58 of 241)
+[2022-03-30 17:48:25] Scanning _mode_t.h.e577fa61.trap (file.c.be374214_0.trap.tar.br) (59 of 241)
+[2022-03-30 17:48:25] Scanning _pid_t.h.424aec6d.trap (file.c.be374214_0.trap.tar.br) (60 of 241)
+[2022-03-30 17:48:25] Scanning _o_sync.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) (61 of 241)
+[2022-03-30 17:48:25] Scanning _o_dsync.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) (62 of 241)
+[2022-03-30 17:48:25] Scanning _seek_set.h.5a10ddfc.trap (file.c.be374214_0.trap.tar.br) (63 of 241)
+[2022-03-30 17:48:25] Scanning _s_ifmt.h.5b0d72ce.trap (file.c.be374214_0.trap.tar.br) (64 of 241)
+[2022-03-30 17:48:25] Scanning _timespec.h.bbd92217.trap (file.c.be374214_0.trap.tar.br) (65 of 241)
+[2022-03-30 17:48:25] Scanning _filesec_t.h.3371b3a8.trap (file.c.be374214_0.trap.tar.br) (66 of 241)
+[2022-03-30 17:48:25] Scanning fcntl.h.c9f80d76.trap (file.c.be374214_0.trap.tar.br) (67 of 241)
+[2022-03-30 17:48:25] Scanning fcntl.h.33e67ab7.trap (file.c.be374214_0.trap.tar.br) (68 of 241)
+[2022-03-30 17:48:25] Scanning _uint8_t.h.b56d0bf4.trap (file.c.be374214_0.trap.tar.br) (69 of 241)
+[2022-03-30 17:48:25] Scanning _uint16_t.h.95cc6274.trap (file.c.be374214_0.trap.tar.br) (70 of 241)
+[2022-03-30 17:48:25] Scanning _uint32_t.h.dc2517bb.trap (file.c.be374214_0.trap.tar.br) (71 of 241)
+[2022-03-30 17:48:25] Scanning _uint64_t.h.c60cbcd5.trap (file.c.be374214_0.trap.tar.br) (72 of 241)
+[2022-03-30 17:48:25] Scanning _intmax_t.h.6c1a2871.trap (file.c.be374214_0.trap.tar.br) (73 of 241)
+[2022-03-30 17:48:25] Scanning _uintmax_t.h.e72b0804.trap (file.c.be374214_0.trap.tar.br) (74 of 241)
+[2022-03-30 17:48:25] Scanning stdint.h.8e3e0480.trap (file.c.be374214_0.trap.tar.br) (75 of 241)
+[2022-03-30 17:48:25] Scanning stdint.h.edd418ea.trap (file.c.be374214_0.trap.tar.br) (76 of 241)
+[2022-03-30 17:48:25] Scanning _wchar_t.h.66cc1ddc.trap (file.c.be374214_0.trap.tar.br) (77 of 241)
+[2022-03-30 17:48:25] Scanning inttypes.h.5d109bf4.trap (file.c.be374214_0.trap.tar.br) (78 of 241)
+[2022-03-30 17:48:25] Scanning inttypes.h.15ca8d6e.trap (file.c.be374214_0.trap.tar.br) (79 of 241)
+[2022-03-30 17:48:25] Scanning _wchar_t.h.88494a21.trap (file.c.be374214_0.trap.tar.br) (80 of 241)
+[2022-03-30 17:48:25] Scanning _regex.h.026b0a18.trap (file.c.be374214_0.trap.tar.br) (81 of 241)
+[2022-03-30 17:48:25] Scanning regex.h.16e6d64b.trap (file.c.be374214_0.trap.tar.br) (82 of 241)
+[2022-03-30 17:48:25] Scanning _clock_t.h.ac6beefb.trap (file.c.be374214_0.trap.tar.br) (83 of 241)
+[2022-03-30 17:48:25] Scanning _time_t.h.cfa261b1.trap (file.c.be374214_0.trap.tar.br) (84 of 241)
+[2022-03-30 17:48:25] Scanning time.h.54984387.trap (file.c.be374214_0.trap.tar.br) (85 of 241)
+[2022-03-30 17:48:25] Scanning appleapiopts.h.dc9b13cc.trap (file.c.be374214_0.trap.tar.br) (86 of 241)
+[2022-03-30 17:48:25] Scanning _OSByteOrder.h.2f90cd27.trap (file.c.be374214_0.trap.tar.br) (87 of 241)
+[2022-03-30 17:48:25] Scanning _OSByteOrder.h.8856e90e.trap (file.c.be374214_0.trap.tar.br) (88 of 241)
+[2022-03-30 17:48:25] Scanning _endian.h.4489fb9f.trap (file.c.be374214_0.trap.tar.br) (89 of 241)
+[2022-03-30 17:48:25] Scanning endian.h.3c695690.trap (file.c.be374214_0.trap.tar.br) (90 of 241)
+[2022-03-30 17:48:25] Scanning endian.h.69f0b6ea.trap (file.c.be374214_0.trap.tar.br) (91 of 241)
+[2022-03-30 17:48:25] Scanning _u_char.h.5afe3e69.trap (file.c.be374214_0.trap.tar.br) (92 of 241)
+[2022-03-30 17:48:25] Scanning _u_short.h.df94b703.trap (file.c.be374214_0.trap.tar.br) (93 of 241)
+[2022-03-30 17:48:25] Scanning _u_int.h.22f18ecb.trap (file.c.be374214_0.trap.tar.br) (94 of 241)
+[2022-03-30 17:48:25] Scanning _caddr_t.h.017e0aa4.trap (file.c.be374214_0.trap.tar.br) (95 of 241)
+[2022-03-30 17:48:25] Scanning _dev_t.h.69b372c8.trap (file.c.be374214_0.trap.tar.br) (96 of 241)
+[2022-03-30 17:48:25] Scanning _blkcnt_t.h.0cb220f7.trap (file.c.be374214_0.trap.tar.br) (97 of 241)
+[2022-03-30 17:48:25] Scanning _blksize_t.h.e7eb57d7.trap (file.c.be374214_0.trap.tar.br) (98 of 241)
+[2022-03-30 17:48:25] Scanning _gid_t.h.bdb5e2ab.trap (file.c.be374214_0.trap.tar.br) (99 of 241)
+[2022-03-30 17:48:25] Scanning _in_addr_t.h.3c5a12fa.trap (file.c.be374214_0.trap.tar.br) (100 of 241)
+[2022-03-30 17:48:25] Scanning _in_port_t.h.d0c449f0.trap (file.c.be374214_0.trap.tar.br) (101 of 241)
+[2022-03-30 17:48:25] Scanning _ino_t.h.87136441.trap (file.c.be374214_0.trap.tar.br) (102 of 241)
+[2022-03-30 17:48:25] Scanning _ino64_t.h.bc4a2ca0.trap (file.c.be374214_0.trap.tar.br) (103 of 241)
+[2022-03-30 17:48:25] Scanning _key_t.h.e6d2105f.trap (file.c.be374214_0.trap.tar.br) (104 of 241)
+[2022-03-30 17:48:25] Scanning _nlink_t.h.6fc661fd.trap (file.c.be374214_0.trap.tar.br) (105 of 241)
+[2022-03-30 17:48:25] Scanning _id_t.h.e6834c2e.trap (file.c.be374214_0.trap.tar.br) (106 of 241)
+[2022-03-30 17:48:25] Scanning _uid_t.h.a7eab6de.trap (file.c.be374214_0.trap.tar.br) (107 of 241)
+[2022-03-30 17:48:25] Scanning _useconds_t.h.59380a07.trap (file.c.be374214_0.trap.tar.br) (108 of 241)
+[2022-03-30 17:48:25] Scanning _suseconds_t.h.02470d04.trap (file.c.be374214_0.trap.tar.br) (109 of 241)
+[2022-03-30 17:48:25] Scanning _rsize_t.h.423b40db.trap (file.c.be374214_0.trap.tar.br) (110 of 241)
+[2022-03-30 17:48:25] Scanning _fd_def.h.fffe34bb.trap (file.c.be374214_0.trap.tar.br) (111 of 241)
+[2022-03-30 17:48:25] Scanning _fd_setsize.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) (112 of 241)
+[2022-03-30 17:48:25] Scanning _fd_set.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) (113 of 241)
+[2022-03-30 17:48:25] Scanning _fd_clr.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) (114 of 241)
+[2022-03-30 17:48:25] Scanning _fd_zero.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) (115 of 241)
+[2022-03-30 17:48:25] Scanning _fd_isset.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) (116 of 241)
+[2022-03-30 17:48:25] Scanning _fd_copy.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) (117 of 241)
+[2022-03-30 17:48:25] Scanning _pthread_attr_t.h.e33294e4.trap (file.c.be374214_0.trap.tar.br) (118 of 241)
+[2022-03-30 17:48:25] Scanning _pthread_cond_t.h.5de3dce1.trap (file.c.be374214_0.trap.tar.br) (119 of 241)
+[2022-03-30 17:48:25] Scanning _pthread_condattr_t.h.7f744180.trap (file.c.be374214_0.trap.tar.br) (120 of 241)
+[2022-03-30 17:48:25] Scanning _pthread_mutex_t.h.7f432def.trap (file.c.be374214_0.trap.tar.br) (121 of 241)
+[2022-03-30 17:48:25] Scanning _pthread_mutexattr_t.h.110adf9a.trap (file.c.be374214_0.trap.tar.br) (122 of 241)
+[2022-03-30 17:48:25] Scanning _pthread_once_t.h.243f3cbc.trap (file.c.be374214_0.trap.tar.br) (123 of 241)
+[2022-03-30 17:48:25] Scanning _pthread_rwlock_t.h.123e9ba5.trap (file.c.be374214_0.trap.tar.br) (124 of 241)
+[2022-03-30 17:48:25] Scanning _pthread_rwlockattr_t.h.666da706.trap (file.c.be374214_0.trap.tar.br) (125 of 241)
+[2022-03-30 17:48:25] Scanning _pthread_t.h.0faa265c.trap (file.c.be374214_0.trap.tar.br) (126 of 241)
+[2022-03-30 17:48:25] Scanning _pthread_key_t.h.395c4a9e.trap (file.c.be374214_0.trap.tar.br) (127 of 241)
+[2022-03-30 17:48:25] Scanning _fsblkcnt_t.h.959a7a34.trap (file.c.be374214_0.trap.tar.br) (128 of 241)
+[2022-03-30 17:48:25] Scanning _fsfilcnt_t.h.1071a242.trap (file.c.be374214_0.trap.tar.br) (129 of 241)
+[2022-03-30 17:48:25] Scanning types.h.e466f138.trap (file.c.be374214_0.trap.tar.br) (130 of 241)
+[2022-03-30 17:48:25] Scanning syslimits.h.9ceae64a.trap (file.c.be374214_0.trap.tar.br) (131 of 241)
+[2022-03-30 17:48:25] Scanning _param.h.8b34173a.trap (file.c.be374214_0.trap.tar.br) (132 of 241)
+[2022-03-30 17:48:25] Scanning param.h.99fbad2a.trap (file.c.be374214_0.trap.tar.br) (133 of 241)
+[2022-03-30 17:48:25] Scanning param.h.524ea913.trap (file.c.be374214_0.trap.tar.br) (134 of 241)
+[2022-03-30 17:48:25] Scanning _limits.h.040e87ae.trap (file.c.be374214_0.trap.tar.br) (135 of 241)
+[2022-03-30 17:48:25] Scanning limits.h.01ef77c6.trap (file.c.be374214_0.trap.tar.br) (136 of 241)
+[2022-03-30 17:48:25] Scanning limits.h.706d8c09.trap (file.c.be374214_0.trap.tar.br) (137 of 241)
+[2022-03-30 17:48:25] Scanning limits.h.2969441c.trap (file.c.be374214_0.trap.tar.br) (138 of 241)
+[2022-03-30 17:48:25] Scanning limits.h.d619f8e9.trap (file.c.be374214_0.trap.tar.br) (139 of 241)
+[2022-03-30 17:48:25] Scanning signal.h.985d5cc2.trap (file.c.be374214_0.trap.tar.br) (140 of 241)
+[2022-03-30 17:48:25] Scanning signal.h.9ab8072e.trap (file.c.be374214_0.trap.tar.br) (141 of 241)
+[2022-03-30 17:48:25] Scanning _structs.h.433ffa8c.trap (file.c.be374214_0.trap.tar.br) (142 of 241)
+[2022-03-30 17:48:25] Scanning _structs.h.04891ee2.trap (file.c.be374214_0.trap.tar.br) (143 of 241)
+[2022-03-30 17:48:25] Scanning _mcontext.h.6eaa1392.trap (file.c.be374214_0.trap.tar.br) (144 of 241)
+[2022-03-30 17:48:25] Scanning _mcontext.h.3bb31d0a.trap (file.c.be374214_0.trap.tar.br) (145 of 241)
+[2022-03-30 17:48:25] Scanning _sigaltstack.h.7d0b3988.trap (file.c.be374214_0.trap.tar.br) (146 of 241)
+[2022-03-30 17:48:25] Scanning _ucontext.h.bb1455bf.trap (file.c.be374214_0.trap.tar.br) (147 of 241)
+[2022-03-30 17:48:25] Scanning _sigset_t.h.c2dbf6af.trap (file.c.be374214_0.trap.tar.br) (148 of 241)
+[2022-03-30 17:48:25] Scanning signal.h.83c5ad98.trap (file.c.be374214_0.trap.tar.br) (149 of 241)
+[2022-03-30 17:48:25] Scanning param.h.f965118b.trap (file.c.be374214_0.trap.tar.br) (150 of 241)
+[2022-03-30 17:48:25] Scanning stat.h.8248c198.trap (file.c.be374214_0.trap.tar.br) (151 of 241)
+[2022-03-30 17:48:25] Scanning stdarg.h.c057d675.trap (file.c.be374214_0.trap.tar.br) (152 of 241)
+[2022-03-30 17:48:25] Scanning _locale.h.2942db79.trap (file.c.be374214_0.trap.tar.br) (153 of 241)
+[2022-03-30 17:48:25] Scanning locale.h.91446089.trap (file.c.be374214_0.trap.tar.br) (154 of 241)
+[2022-03-30 17:48:25] Scanning _xlocale.h.610d5c54.trap (file.c.be374214_0.trap.tar.br) (155 of 241)
+[2022-03-30 17:48:25] Scanning __stddef_max_align_t.h.8cba3490.trap (file.c.be374214_0.trap.tar.br) (156 of 241)
+[2022-03-30 17:48:25] Scanning stddef.h.f5f7143f.trap (file.c.be374214_0.trap.tar.br) (157 of 241)
+[2022-03-30 17:48:25] Scanning _inttypes.h.a78fe919.trap (file.c.be374214_0.trap.tar.br) (158 of 241)
+[2022-03-30 17:48:25] Scanning _regex.h.543cdf77.trap (file.c.be374214_0.trap.tar.br) (159 of 241)
+[2022-03-30 17:48:25] Scanning _stdio.h.ed6d3b63.trap (file.c.be374214_0.trap.tar.br) (160 of 241)
+[2022-03-30 17:48:25] Scanning _time.h.1340c4a2.trap (file.c.be374214_0.trap.tar.br) (161 of 241)
+[2022-03-30 17:48:25] Scanning xlocale.h.527b8c43.trap (file.c.be374214_0.trap.tar.br) (162 of 241)
+[2022-03-30 17:48:25] Scanning file.h.e2aa64e2.trap (file.c.be374214_0.trap.tar.br) (163 of 241)
+[2022-03-30 17:48:25] Scanning magic.h.ef32adfa.trap (file.c.be374214_0.trap.tar.br) (164 of 241)
+[2022-03-30 17:48:25] Scanning _timeval.h.be7101cf.trap (file.c.be374214_0.trap.tar.br) (165 of 241)
+[2022-03-30 17:48:25] Scanning resource.h.47707e12.trap (file.c.be374214_0.trap.tar.br) (166 of 241)
+[2022-03-30 17:48:25] Scanning wait.h.a36eef99.trap (file.c.be374214_0.trap.tar.br) (167 of 241)
+[2022-03-30 17:48:25] Scanning alloca.h.4a7105a8.trap (file.c.be374214_0.trap.tar.br) (168 of 241)
+[2022-03-30 17:48:25] Scanning _ct_rune_t.h.37f7745a.trap (file.c.be374214_0.trap.tar.br) (169 of 241)
+[2022-03-30 17:48:25] Scanning _rune_t.h.9726834f.trap (file.c.be374214_0.trap.tar.br) (170 of 241)
+[2022-03-30 17:48:25] Scanning _malloc.h.3c3f68ff.trap (file.c.be374214_0.trap.tar.br) (171 of 241)
+[2022-03-30 17:48:25] Scanning _stdlib.h.eb668b17.trap (file.c.be374214_0.trap.tar.br) (172 of 241)
+[2022-03-30 17:48:25] Scanning stdlib.h.f1d894f9.trap (file.c.be374214_0.trap.tar.br) (173 of 241)
+[2022-03-30 17:48:25] Scanning _posix_vdisable.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) (174 of 241)
+[2022-03-30 17:48:25] Scanning _seek_set.h.a8d33084.trap (file.c.be374214_0.trap.tar.br) (175 of 241)
+[2022-03-30 17:48:25] Scanning unistd.h.584a99c6.trap (file.c.be374214_0.trap.tar.br) (176 of 241)
+[2022-03-30 17:48:25] Scanning _select.h.8c187afc.trap (file.c.be374214_0.trap.tar.br) (177 of 241)
+[2022-03-30 17:48:25] Scanning select.h.1f655eb1.trap (file.c.be374214_0.trap.tar.br) (178 of 241)
+[2022-03-30 17:48:25] Scanning _uuid_t.h.a91360ec.trap (file.c.be374214_0.trap.tar.br) (179 of 241)
+[2022-03-30 17:48:25] Scanning gethostuuid.h.0af3ff39.trap (file.c.be374214_0.trap.tar.br) (180 of 241)
+[2022-03-30 17:48:25] Scanning unistd.h.28b046c3.trap (file.c.be374214_0.trap.tar.br) (181 of 241)
+[2022-03-30 17:48:25] Scanning string.h.2e7f2ef2.trap (file.c.be374214_0.trap.tar.br) (182 of 241)
+[2022-03-30 17:48:25] Scanning _strings.h.fec6f099.trap (file.c.be374214_0.trap.tar.br) (183 of 241)
+[2022-03-30 17:48:25] Scanning strings.h.97607a43.trap (file.c.be374214_0.trap.tar.br) (184 of 241)
+[2022-03-30 17:48:25] Scanning _string.h.a39f9f6b.trap (file.c.be374214_0.trap.tar.br) (185 of 241)
+[2022-03-30 17:48:25] Scanning _string.h.b86ccc23.trap (file.c.be374214_0.trap.tar.br) (186 of 241)
+[2022-03-30 17:48:25] Scanning string.h.e14819de.trap (file.c.be374214_0.trap.tar.br) (187 of 241)
+[2022-03-30 17:48:25] Scanning _mbstate_t.h.85c90e4e.trap (file.c.be374214_0.trap.tar.br) (188 of 241)
+[2022-03-30 17:48:25] Scanning _wint_t.h.b7a8f306.trap (file.c.be374214_0.trap.tar.br) (189 of 241)
+[2022-03-30 17:48:25] Scanning _wctype_t.h.95ed6c2a.trap (file.c.be374214_0.trap.tar.br) (190 of 241)
+[2022-03-30 17:48:25] Scanning runetype.h.c4afaa0b.trap (file.c.be374214_0.trap.tar.br) (191 of 241)
+[2022-03-30 17:48:25] Scanning _ctype.h.8b716250.trap (file.c.be374214_0.trap.tar.br) (192 of 241)
+[2022-03-30 17:48:25] Scanning _ctype.h.5f287fe4.trap (file.c.be374214_0.trap.tar.br) (193 of 241)
+[2022-03-30 17:48:25] Scanning _ctype.h.67fee1da.trap (file.c.be374214_0.trap.tar.br) (194 of 241)
+[2022-03-30 17:48:25] Scanning ctype.h.acc49e50.trap (file.c.be374214_0.trap.tar.br) (195 of 241)
+[2022-03-30 17:48:25] Scanning __wctype.h.36bd776b.trap (file.c.be374214_0.trap.tar.br) (196 of 241)
+[2022-03-30 17:48:25] Scanning __wctype.h.c32ddbbd.trap (file.c.be374214_0.trap.tar.br) (197 of 241)
+[2022-03-30 17:48:25] Scanning _wctype.h.9955920b.trap (file.c.be374214_0.trap.tar.br) (198 of 241)
+[2022-03-30 17:48:25] Scanning stddef.h.89312872.trap (file.c.be374214_0.trap.tar.br) (199 of 241)
+[2022-03-30 17:48:25] Scanning _wchar.h.c62e9f80.trap (file.c.be374214_0.trap.tar.br) (200 of 241)
+[2022-03-30 17:48:25] Scanning wchar.h.32d5eb62.trap (file.c.be374214_0.trap.tar.br) (201 of 241)
+[2022-03-30 17:48:25] Scanning getopt.h.9ffaca8a.trap (file.c.be374214_0.trap.tar.br) (202 of 241)
+[2022-03-30 17:48:25] Scanning file_opts.h.8d125cf0.trap (file.c.be374214_0.trap.tar.br) (203 of 241)
+[2022-03-30 17:48:25] Scanning file.c.be374214.trap (file.c.be374214_0.trap.tar.br) (204 of 241)
+[2022-03-30 17:48:25] Scanning fsmagic.c.2228d392.trap (fsmagic.c.2228d392_0.trap.tar.br) (205 of 241)
+[2022-03-30 17:48:25] Scanning _wctrans_t.h.1d033e1d.trap (funcs.c.d3532098_0.trap.tar.br) (206 of 241)
+[2022-03-30 17:48:25] Scanning _wctype.h.e91ffa8b.trap (funcs.c.d3532098_0.trap.tar.br) (207 of 241)
+[2022-03-30 17:48:25] Scanning wctype.h.41e9b581.trap (funcs.c.d3532098_0.trap.tar.br) (208 of 241)
+[2022-03-30 17:48:25] Scanning funcs.c.d3532098.trap (funcs.c.d3532098_0.trap.tar.br) (209 of 241)
+[2022-03-30 17:48:25] Scanning tar.h.d991ac89.trap (is_tar.c.d625af83_0.trap.tar.br) (210 of 241)
+[2022-03-30 17:48:25] Scanning is_tar.c.d625af83.trap (is_tar.c.d625af83_0.trap.tar.br) (211 of 241)
+[2022-03-30 17:48:25] Scanning mman.h.84224e09.trap (magic.c.7b440f84_0.trap.tar.br) (212 of 241)
+[2022-03-30 17:48:25] Scanning _timeval64.h.95c9ad2d.trap (magic.c.7b440f84_0.trap.tar.br) (213 of 241)
+[2022-03-30 17:48:25] Scanning time.h.8eef2a99.trap (magic.c.7b440f84_0.trap.tar.br) (214 of 241)
+[2022-03-30 17:48:25] Scanning magic.c.7b440f84.trap (magic.c.7b440f84_0.trap.tar.br) (215 of 241)
+[2022-03-30 17:48:25] Scanning _timespec.h.06ab0069.trap (print.c.879c8ac7_0.trap.tar.br) (216 of 241)
+[2022-03-30 17:48:25] Scanning cdf.h.00a981c7.trap (print.c.879c8ac7_0.trap.tar.br) (217 of 241)
+[2022-03-30 17:48:25] Scanning print.c.879c8ac7.trap (print.c.879c8ac7_0.trap.tar.br) (218 of 241)
+[2022-03-30 17:48:25] Scanning readcdf.c.5556e500.trap (readcdf.c.5556e500_0.trap.tar.br) (219 of 241)
+[2022-03-30 17:48:25] Scanning readelf.h.063278f7.trap (readelf.c.11d60b4d_0.trap.tar.br) (220 of 241)
+[2022-03-30 17:48:25] Scanning readelf.c.11d60b4d.trap (readelf.c.11d60b4d_0.trap.tar.br) (221 of 241)
+[2022-03-30 17:48:25] Scanning softmagic.c.dfee47f7.trap (softmagic.c.dfee47f7_0.trap.tar.br) (222 of 241)
+[2022-03-30 17:48:25] Scanning 39810923_0.trap.br (223 of 241)
+[2022-03-30 17:48:25] Scanning 37021059_0.trap.br (224 of 241)
+[2022-03-30 17:48:25] Scanning 17774455_0.trap.br (225 of 241)
+[2022-03-30 17:48:25] Scanning 38027017_0.trap.br (226 of 241)
+[2022-03-30 17:48:25] Scanning 9750589_0.trap.br (227 of 241)
+[2022-03-30 17:48:25] Scanning 8477443_0.trap.br (228 of 241)
+[2022-03-30 17:48:25] Scanning 52716688_0.trap.br (229 of 241)
+[2022-03-30 17:48:25] Scanning 55123503_0.trap.br (230 of 241)
+[2022-03-30 17:48:25] Scanning 40465548_0.trap.br (231 of 241)
+[2022-03-30 17:48:25] Scanning 28112199_0.trap.br (232 of 241)
+[2022-03-30 17:48:25] Scanning 42346653_0.trap.br (233 of 241)
+[2022-03-30 17:48:25] Scanning 58005587_0.trap.br (234 of 241)
+[2022-03-30 17:48:25] Scanning 39309719_0.trap.br (235 of 241)
+[2022-03-30 17:48:25] Scanning 34756435_0.trap.br (236 of 241)
+[2022-03-30 17:48:25] Scanning 38688897_0.trap.br (237 of 241)
+[2022-03-30 17:48:25] Scanning 28371374_0.trap.br (238 of 241)
+[2022-03-30 17:48:25] Scanning file.trap.br (239 of 241)
+[2022-03-30 17:48:25] Scanning libmagic.1.dylib.trap.br (240 of 241)
+[2022-03-30 17:48:25] Scanning sourceLocationPrefix.trap.gz (241 of 241)
+[2022-03-30 17:48:25] Assembling file.link with 187 files (1 of 3)
+[2022-03-30 17:48:25] Assembling libmagic.1.dylib.link with 234 files (2 of 3)
+[2022-03-30 17:48:25] Assembling no link target with 2 files (3 of 3)
+[2022-03-30 17:48:25] Importing assert.h.306c6a2d.trap (apprentice.c.f6d781d0_0.trap.tar.br) for libmagic.1.dylib.link (1 of 241)
+[2022-03-30 17:48:25] Importing dirent.h.92506982.trap (apprentice.c.f6d781d0_0.trap.tar.br) for libmagic.1.dylib.link (2 of 241)
+[2022-03-30 17:48:25] Importing dirent.h.5e8d649b.trap (apprentice.c.f6d781d0_0.trap.tar.br) for libmagic.1.dylib.link (3 of 241)
+[2022-03-30 17:48:25] Importing apprentice.c.f6d781d0.trap (apprentice.c.f6d781d0_0.trap.tar.br) for libmagic.1.dylib.link (4 of 241)
+[2022-03-30 17:48:25] Importing apptype.c.05b6f4fe.trap (apptype.c.05b6f4fe_0.trap.tar.br) for libmagic.1.dylib.link (5 of 241)
+[2022-03-30 17:48:25] Importing memory.h.28d1762f.trap (ascmagic.c.628b42a4_0.trap.tar.br) for libmagic.1.dylib.link (6 of 241)
+[2022-03-30 17:48:25] Importing ascmagic.c.628b42a4.trap (ascmagic.c.628b42a4_0.trap.tar.br) for libmagic.1.dylib.link (7 of 241)
+[2022-03-30 17:48:25] Importing cdf.c.c3c15bfc.trap (cdf.c.c3c15bfc_0.trap.tar.br) for libmagic.1.dylib.link (8 of 241)
+[2022-03-30 17:48:25] Importing cdf_time.c.dfafc750.trap (cdf_time.c.dfafc750_0.trap.tar.br) for libmagic.1.dylib.link (9 of 241)
+[2022-03-30 17:48:25] Importing ioccom.h.042b8aff.trap (compress.c.718df00d_0.trap.tar.br) for libmagic.1.dylib.link (10 of 241)
+[2022-03-30 17:48:25] Importing ttycom.h.6365c1ad.trap (compress.c.718df00d_0.trap.tar.br) for libmagic.1.dylib.link (11 of 241)
+[2022-03-30 17:48:25] Importing filio.h.c40ba584.trap (compress.c.718df00d_0.trap.tar.br) for libmagic.1.dylib.link (12 of 241)
+[2022-03-30 17:48:25] Importing sockio.h.ee2449ba.trap (compress.c.718df00d_0.trap.tar.br) for libmagic.1.dylib.link (13 of 241)
+[2022-03-30 17:48:25] Importing ioctl.h.c6988863.trap (compress.c.718df00d_0.trap.tar.br) for libmagic.1.dylib.link (14 of 241)
+[2022-03-30 17:48:25] Importing zconf.h.d2c05dce.trap (compress.c.718df00d_0.trap.tar.br) for libmagic.1.dylib.link (15 of 241)
+[2022-03-30 17:48:25] Importing zlib.h.ec423fe7.trap (compress.c.718df00d_0.trap.tar.br) for libmagic.1.dylib.link (16 of 241)
+[2022-03-30 17:48:25] Importing compress.c.718df00d.trap (compress.c.718df00d_0.trap.tar.br) for libmagic.1.dylib.link (17 of 241)
+[2022-03-30 17:48:25] Importing encoding.c.dc61dfa9.trap (encoding.c.dc61dfa9_0.trap.tar.br) for libmagic.1.dylib.link (18 of 241)
+[2022-03-30 17:48:25] Importing cpp_predefined.acb19af8.trap (file.c.be374214_0.trap.tar.br) for no link target (19 of 241)
+[2022-03-30 17:48:25] Importing config.h.44d29ae0.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (20 of 241)
+[2022-03-30 17:48:25] Importing _symbol_aliasing.h.3bc0a392.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (21 of 241)
+[2022-03-30 17:48:25] Importing _posix_availability.h.1fc5d244.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (22 of 241)
+[2022-03-30 17:48:25] Importing cdefs.h.de3d8cf6.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (23 of 241)
+[2022-03-30 17:48:25] Importing AvailabilityVersions.h.9514edd9.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (24 of 241)
+[2022-03-30 17:48:25] Importing AvailabilityInternal.h.4ae5c96f.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (25 of 241)
+[2022-03-30 17:48:25] Importing Availability.h.eacf3b72.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (26 of 241)
+[2022-03-30 17:48:25] Importing _types.h.0da9112b.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (27 of 241)
+[2022-03-30 17:48:25] Importing _types.h.8b34173a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (28 of 241)
+[2022-03-30 17:48:25] Importing _pthread_types.h.ec3c0e88.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (29 of 241)
+[2022-03-30 17:48:25] Importing _types.h.0a309489.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (30 of 241)
+[2022-03-30 17:48:25] Importing _types.h.ad2d34f2.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (31 of 241)
+[2022-03-30 17:48:25] Importing _int8_t.h.f29290cb.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (32 of 241)
+[2022-03-30 17:48:25] Importing _int16_t.h.0efc7dab.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (33 of 241)
+[2022-03-30 17:48:25] Importing _int32_t.h.6962392d.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (34 of 241)
+[2022-03-30 17:48:25] Importing _int64_t.h.536f90e3.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (35 of 241)
+[2022-03-30 17:48:25] Importing _u_int8_t.h.552cf7b4.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (36 of 241)
+[2022-03-30 17:48:25] Importing _u_int16_t.h.253a9b79.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (37 of 241)
+[2022-03-30 17:48:25] Importing _u_int32_t.h.3c64ebfb.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (38 of 241)
+[2022-03-30 17:48:25] Importing _u_int64_t.h.cbd81c97.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (39 of 241)
+[2022-03-30 17:48:25] Importing types.h.816d5ac7.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (40 of 241)
+[2022-03-30 17:48:25] Importing _intptr_t.h.4730365d.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (41 of 241)
+[2022-03-30 17:48:25] Importing _uintptr_t.h.645528a4.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (42 of 241)
+[2022-03-30 17:48:25] Importing types.h.7da8c317.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (43 of 241)
+[2022-03-30 17:48:25] Importing types.h.29642447.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (44 of 241)
+[2022-03-30 17:48:25] Importing _va_list.h.29e4b6a2.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (45 of 241)
+[2022-03-30 17:48:25] Importing _size_t.h.01dad05b.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (46 of 241)
+[2022-03-30 17:48:25] Importing _null.h.042b8aff.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (47 of 241)
+[2022-03-30 17:48:25] Importing stdio.h.e8e0597d.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (48 of 241)
+[2022-03-30 17:48:25] Importing _stdio.h.feb536bc.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (49 of 241)
+[2022-03-30 17:48:25] Importing _ctermid.h.eb4b2ae1.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (50 of 241)
+[2022-03-30 17:48:25] Importing _off_t.h.35683854.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (51 of 241)
+[2022-03-30 17:48:25] Importing _ssize_t.h.e58412bd.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (52 of 241)
+[2022-03-30 17:48:25] Importing _common.h.06bc851e.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (53 of 241)
+[2022-03-30 17:48:25] Importing _stdio.h.e1cc065d.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (54 of 241)
+[2022-03-30 17:48:25] Importing stdio.h.9d32ed4c.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (55 of 241)
+[2022-03-30 17:48:25] Importing _errno_t.h.fbe65fbd.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (56 of 241)
+[2022-03-30 17:48:25] Importing errno.h.45ad544b.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (57 of 241)
+[2022-03-30 17:48:25] Importing errno.h.309dc923.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (58 of 241)
+[2022-03-30 17:48:25] Importing _mode_t.h.e577fa61.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (59 of 241)
+[2022-03-30 17:48:25] Importing _pid_t.h.424aec6d.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (60 of 241)
+[2022-03-30 17:48:25] Importing _o_sync.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (61 of 241)
+[2022-03-30 17:48:25] Importing _o_dsync.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (62 of 241)
+[2022-03-30 17:48:25] Importing _seek_set.h.5a10ddfc.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (63 of 241)
+[2022-03-30 17:48:25] Importing _s_ifmt.h.5b0d72ce.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (64 of 241)
+[2022-03-30 17:48:25] Importing _timespec.h.bbd92217.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (65 of 241)
+[2022-03-30 17:48:25] Importing _filesec_t.h.3371b3a8.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (66 of 241)
+[2022-03-30 17:48:25] Importing fcntl.h.c9f80d76.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (67 of 241)
+[2022-03-30 17:48:25] Importing fcntl.h.33e67ab7.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (68 of 241)
+[2022-03-30 17:48:25] Importing _uint8_t.h.b56d0bf4.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (69 of 241)
+[2022-03-30 17:48:25] Importing _uint16_t.h.95cc6274.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (70 of 241)
+[2022-03-30 17:48:25] Importing _uint32_t.h.dc2517bb.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (71 of 241)
+[2022-03-30 17:48:25] Importing _uint64_t.h.c60cbcd5.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (72 of 241)
+[2022-03-30 17:48:25] Importing _intmax_t.h.6c1a2871.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (73 of 241)
+[2022-03-30 17:48:25] Importing _uintmax_t.h.e72b0804.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (74 of 241)
+[2022-03-30 17:48:25] Importing stdint.h.8e3e0480.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (75 of 241)
+[2022-03-30 17:48:26] Importing stdint.h.edd418ea.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (76 of 241)
+[2022-03-30 17:48:26] Importing _wchar_t.h.66cc1ddc.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (77 of 241)
+[2022-03-30 17:48:26] Importing inttypes.h.5d109bf4.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (78 of 241)
+[2022-03-30 17:48:26] Importing inttypes.h.15ca8d6e.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (79 of 241)
+[2022-03-30 17:48:26] Importing _wchar_t.h.88494a21.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (80 of 241)
+[2022-03-30 17:48:26] Importing _regex.h.026b0a18.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (81 of 241)
+[2022-03-30 17:48:26] Importing regex.h.16e6d64b.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (82 of 241)
+[2022-03-30 17:48:26] Importing _clock_t.h.ac6beefb.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (83 of 241)
+[2022-03-30 17:48:26] Importing _time_t.h.cfa261b1.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (84 of 241)
+[2022-03-30 17:48:26] Importing time.h.54984387.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (85 of 241)
+[2022-03-30 17:48:26] Importing appleapiopts.h.dc9b13cc.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (86 of 241)
+[2022-03-30 17:48:26] Importing _OSByteOrder.h.2f90cd27.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (87 of 241)
+[2022-03-30 17:48:26] Importing _OSByteOrder.h.8856e90e.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (88 of 241)
+[2022-03-30 17:48:26] Importing _endian.h.4489fb9f.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (89 of 241)
+[2022-03-30 17:48:26] Importing endian.h.3c695690.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (90 of 241)
+[2022-03-30 17:48:26] Importing endian.h.69f0b6ea.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (91 of 241)
+[2022-03-30 17:48:26] Importing _u_char.h.5afe3e69.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (92 of 241)
+[2022-03-30 17:48:26] Importing _u_short.h.df94b703.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (93 of 241)
+[2022-03-30 17:48:26] Importing _u_int.h.22f18ecb.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (94 of 241)
+[2022-03-30 17:48:26] Importing _caddr_t.h.017e0aa4.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (95 of 241)
+[2022-03-30 17:48:26] Importing _dev_t.h.69b372c8.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (96 of 241)
+[2022-03-30 17:48:26] Importing _blkcnt_t.h.0cb220f7.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (97 of 241)
+[2022-03-30 17:48:26] Importing _blksize_t.h.e7eb57d7.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (98 of 241)
+[2022-03-30 17:48:26] Importing _gid_t.h.bdb5e2ab.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (99 of 241)
+[2022-03-30 17:48:26] Importing _in_addr_t.h.3c5a12fa.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (100 of 241)
+[2022-03-30 17:48:26] Importing _in_port_t.h.d0c449f0.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (101 of 241)
+[2022-03-30 17:48:26] Importing _ino_t.h.87136441.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (102 of 241)
+[2022-03-30 17:48:26] Importing _ino64_t.h.bc4a2ca0.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (103 of 241)
+[2022-03-30 17:48:26] Importing _key_t.h.e6d2105f.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (104 of 241)
+[2022-03-30 17:48:26] Importing _nlink_t.h.6fc661fd.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (105 of 241)
+[2022-03-30 17:48:26] Importing _id_t.h.e6834c2e.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (106 of 241)
+[2022-03-30 17:48:26] Importing _uid_t.h.a7eab6de.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (107 of 241)
+[2022-03-30 17:48:26] Importing _useconds_t.h.59380a07.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (108 of 241)
+[2022-03-30 17:48:26] Importing _suseconds_t.h.02470d04.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (109 of 241)
+[2022-03-30 17:48:26] Importing _rsize_t.h.423b40db.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (110 of 241)
+[2022-03-30 17:48:26] Importing _fd_def.h.fffe34bb.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (111 of 241)
+[2022-03-30 17:48:26] Importing _fd_setsize.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (112 of 241)
+[2022-03-30 17:48:26] Importing _fd_set.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (113 of 241)
+[2022-03-30 17:48:26] Importing _fd_clr.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (114 of 241)
+[2022-03-30 17:48:26] Importing _fd_zero.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (115 of 241)
+[2022-03-30 17:48:26] Importing _fd_isset.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (116 of 241)
+[2022-03-30 17:48:26] Importing _fd_copy.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (117 of 241)
+[2022-03-30 17:48:26] Importing _pthread_attr_t.h.e33294e4.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (118 of 241)
+[2022-03-30 17:48:26] Importing _pthread_cond_t.h.5de3dce1.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (119 of 241)
+[2022-03-30 17:48:26] Importing _pthread_condattr_t.h.7f744180.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (120 of 241)
+[2022-03-30 17:48:26] Importing _pthread_mutex_t.h.7f432def.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (121 of 241)
+[2022-03-30 17:48:26] Importing _pthread_mutexattr_t.h.110adf9a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (122 of 241)
+[2022-03-30 17:48:26] Importing _pthread_once_t.h.243f3cbc.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (123 of 241)
+[2022-03-30 17:48:26] Importing _pthread_rwlock_t.h.123e9ba5.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (124 of 241)
+[2022-03-30 17:48:26] Importing _pthread_rwlockattr_t.h.666da706.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (125 of 241)
+[2022-03-30 17:48:26] Importing _pthread_t.h.0faa265c.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (126 of 241)
+[2022-03-30 17:48:26] Importing _pthread_key_t.h.395c4a9e.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (127 of 241)
+[2022-03-30 17:48:26] Importing _fsblkcnt_t.h.959a7a34.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (128 of 241)
+[2022-03-30 17:48:26] Importing _fsfilcnt_t.h.1071a242.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (129 of 241)
+[2022-03-30 17:48:26] Importing types.h.e466f138.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (130 of 241)
+[2022-03-30 17:48:26] Importing syslimits.h.9ceae64a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (131 of 241)
+[2022-03-30 17:48:26] Importing _param.h.8b34173a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (132 of 241)
+[2022-03-30 17:48:26] Importing param.h.99fbad2a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (133 of 241)
+[2022-03-30 17:48:26] Importing param.h.524ea913.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (134 of 241)
+[2022-03-30 17:48:26] Importing _limits.h.040e87ae.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (135 of 241)
+[2022-03-30 17:48:26] Importing limits.h.01ef77c6.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (136 of 241)
+[2022-03-30 17:48:26] Importing limits.h.706d8c09.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (137 of 241)
+[2022-03-30 17:48:26] Importing limits.h.2969441c.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (138 of 241)
+[2022-03-30 17:48:26] Importing limits.h.d619f8e9.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (139 of 241)
+[2022-03-30 17:48:26] Importing signal.h.985d5cc2.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (140 of 241)
+[2022-03-30 17:48:26] Importing signal.h.9ab8072e.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (141 of 241)
+[2022-03-30 17:48:26] Importing _structs.h.433ffa8c.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (142 of 241)
+[2022-03-30 17:48:26] Importing _structs.h.04891ee2.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (143 of 241)
+[2022-03-30 17:48:26] Importing _mcontext.h.6eaa1392.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (144 of 241)
+[2022-03-30 17:48:26] Importing _mcontext.h.3bb31d0a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (145 of 241)
+[2022-03-30 17:48:26] Importing _sigaltstack.h.7d0b3988.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (146 of 241)
+[2022-03-30 17:48:26] Importing _ucontext.h.bb1455bf.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (147 of 241)
+[2022-03-30 17:48:26] Importing _sigset_t.h.c2dbf6af.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (148 of 241)
+[2022-03-30 17:48:26] Importing signal.h.83c5ad98.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (149 of 241)
+[2022-03-30 17:48:26] Importing param.h.f965118b.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (150 of 241)
+[2022-03-30 17:48:26] Importing stat.h.8248c198.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (151 of 241)
+[2022-03-30 17:48:26] Importing stdarg.h.c057d675.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (152 of 241)
+[2022-03-30 17:48:26] Importing _locale.h.2942db79.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (153 of 241)
+[2022-03-30 17:48:26] Importing locale.h.91446089.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (154 of 241)
+[2022-03-30 17:48:26] Importing _xlocale.h.610d5c54.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (155 of 241)
+[2022-03-30 17:48:26] Importing __stddef_max_align_t.h.8cba3490.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (156 of 241)
+[2022-03-30 17:48:26] Importing stddef.h.f5f7143f.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (157 of 241)
+[2022-03-30 17:48:26] Importing _inttypes.h.a78fe919.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (158 of 241)
+[2022-03-30 17:48:26] Importing _regex.h.543cdf77.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (159 of 241)
+[2022-03-30 17:48:26] Importing _stdio.h.ed6d3b63.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (160 of 241)
+[2022-03-30 17:48:26] Importing _time.h.1340c4a2.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (161 of 241)
+[2022-03-30 17:48:26] Importing xlocale.h.527b8c43.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (162 of 241)
+[2022-03-30 17:48:26] Importing file.h.e2aa64e2.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (163 of 241)
+[2022-03-30 17:48:26] Importing magic.h.ef32adfa.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (164 of 241)
+[2022-03-30 17:48:26] Importing _timeval.h.be7101cf.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (165 of 241)
+[2022-03-30 17:48:26] Importing resource.h.47707e12.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (166 of 241)
+[2022-03-30 17:48:26] Importing wait.h.a36eef99.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (167 of 241)
+[2022-03-30 17:48:26] Importing alloca.h.4a7105a8.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (168 of 241)
+[2022-03-30 17:48:26] Importing _ct_rune_t.h.37f7745a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (169 of 241)
+[2022-03-30 17:48:26] Importing _rune_t.h.9726834f.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (170 of 241)
+[2022-03-30 17:48:26] Importing _malloc.h.3c3f68ff.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (171 of 241)
+[2022-03-30 17:48:26] Importing _stdlib.h.eb668b17.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (172 of 241)
+[2022-03-30 17:48:26] Importing stdlib.h.f1d894f9.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (173 of 241)
+[2022-03-30 17:48:26] Importing _posix_vdisable.h.bfeb891a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (174 of 241)
+[2022-03-30 17:48:26] Importing _seek_set.h.a8d33084.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (175 of 241)
+[2022-03-30 17:48:26] Importing unistd.h.584a99c6.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (176 of 241)
+[2022-03-30 17:48:26] Importing _select.h.8c187afc.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (177 of 241)
+[2022-03-30 17:48:26] Importing select.h.1f655eb1.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (178 of 241)
+[2022-03-30 17:48:26] Importing _uuid_t.h.a91360ec.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (179 of 241)
+[2022-03-30 17:48:26] Importing gethostuuid.h.0af3ff39.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (180 of 241)
+[2022-03-30 17:48:26] Importing unistd.h.28b046c3.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (181 of 241)
+[2022-03-30 17:48:26] Importing string.h.2e7f2ef2.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (182 of 241)
+[2022-03-30 17:48:26] Importing _strings.h.fec6f099.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (183 of 241)
+[2022-03-30 17:48:26] Importing strings.h.97607a43.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (184 of 241)
+[2022-03-30 17:48:26] Importing _string.h.a39f9f6b.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (185 of 241)
+[2022-03-30 17:48:26] Importing _string.h.b86ccc23.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (186 of 241)
+[2022-03-30 17:48:26] Importing string.h.e14819de.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (187 of 241)
+[2022-03-30 17:48:26] Importing _mbstate_t.h.85c90e4e.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (188 of 241)
+[2022-03-30 17:48:26] Importing _wint_t.h.b7a8f306.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (189 of 241)
+[2022-03-30 17:48:26] Importing _wctype_t.h.95ed6c2a.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (190 of 241)
+[2022-03-30 17:48:26] Importing runetype.h.c4afaa0b.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (191 of 241)
+[2022-03-30 17:48:26] Importing _ctype.h.8b716250.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (192 of 241)
+[2022-03-30 17:48:26] Importing _ctype.h.5f287fe4.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (193 of 241)
+[2022-03-30 17:48:26] Importing _ctype.h.67fee1da.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (194 of 241)
+[2022-03-30 17:48:26] Importing ctype.h.acc49e50.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (195 of 241)
+[2022-03-30 17:48:26] Importing __wctype.h.36bd776b.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (196 of 241)
+[2022-03-30 17:48:26] Importing __wctype.h.c32ddbbd.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (197 of 241)
+[2022-03-30 17:48:26] Importing _wctype.h.9955920b.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (198 of 241)
+[2022-03-30 17:48:26] Importing stddef.h.89312872.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (199 of 241)
+[2022-03-30 17:48:26] Importing _wchar.h.c62e9f80.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (200 of 241)
+[2022-03-30 17:48:26] Importing wchar.h.32d5eb62.trap (file.c.be374214_0.trap.tar.br) for 2 link targets (201 of 241)
+[2022-03-30 17:48:26] Importing getopt.h.9ffaca8a.trap (file.c.be374214_0.trap.tar.br) for file.link (202 of 241)
+[2022-03-30 17:48:26] Importing file_opts.h.8d125cf0.trap (file.c.be374214_0.trap.tar.br) for file.link (203 of 241)
+[2022-03-30 17:48:26] Importing file.c.be374214.trap (file.c.be374214_0.trap.tar.br) for file.link (204 of 241)
+[2022-03-30 17:48:26] Importing fsmagic.c.2228d392.trap (fsmagic.c.2228d392_0.trap.tar.br) for libmagic.1.dylib.link (205 of 241)
+[2022-03-30 17:48:26] Importing _wctrans_t.h.1d033e1d.trap (funcs.c.d3532098_0.trap.tar.br) for libmagic.1.dylib.link (206 of 241)
+[2022-03-30 17:48:26] Importing _wctype.h.e91ffa8b.trap (funcs.c.d3532098_0.trap.tar.br) for libmagic.1.dylib.link (207 of 241)
+[2022-03-30 17:48:26] Importing wctype.h.41e9b581.trap (funcs.c.d3532098_0.trap.tar.br) for libmagic.1.dylib.link (208 of 241)
+[2022-03-30 17:48:26] Importing funcs.c.d3532098.trap (funcs.c.d3532098_0.trap.tar.br) for libmagic.1.dylib.link (209 of 241)
+[2022-03-30 17:48:26] Importing tar.h.d991ac89.trap (is_tar.c.d625af83_0.trap.tar.br) for libmagic.1.dylib.link (210 of 241)
+[2022-03-30 17:48:26] Importing is_tar.c.d625af83.trap (is_tar.c.d625af83_0.trap.tar.br) for libmagic.1.dylib.link (211 of 241)
+[2022-03-30 17:48:26] Importing mman.h.84224e09.trap (magic.c.7b440f84_0.trap.tar.br) for libmagic.1.dylib.link (212 of 241)
+[2022-03-30 17:48:26] Importing _timeval64.h.95c9ad2d.trap (magic.c.7b440f84_0.trap.tar.br) for libmagic.1.dylib.link (213 of 241)
+[2022-03-30 17:48:26] Importing time.h.8eef2a99.trap (magic.c.7b440f84_0.trap.tar.br) for libmagic.1.dylib.link (214 of 241)
+[2022-03-30 17:48:26] Importing magic.c.7b440f84.trap (magic.c.7b440f84_0.trap.tar.br) for libmagic.1.dylib.link (215 of 241)
+[2022-03-30 17:48:26] Importing _timespec.h.06ab0069.trap (print.c.879c8ac7_0.trap.tar.br) for libmagic.1.dylib.link (216 of 241)
+[2022-03-30 17:48:26] Importing cdf.h.00a981c7.trap (print.c.879c8ac7_0.trap.tar.br) for libmagic.1.dylib.link (217 of 241)
+[2022-03-30 17:48:26] Importing print.c.879c8ac7.trap (print.c.879c8ac7_0.trap.tar.br) for libmagic.1.dylib.link (218 of 241)
+[2022-03-30 17:48:26] Importing readcdf.c.5556e500.trap (readcdf.c.5556e500_0.trap.tar.br) for libmagic.1.dylib.link (219 of 241)
+[2022-03-30 17:48:26] Importing readelf.h.063278f7.trap (readelf.c.11d60b4d_0.trap.tar.br) for libmagic.1.dylib.link (220 of 241)
+[2022-03-30 17:48:26] Importing readelf.c.11d60b4d.trap (readelf.c.11d60b4d_0.trap.tar.br) for libmagic.1.dylib.link (221 of 241)
+[2022-03-30 17:48:26] Importing softmagic.c.dfee47f7.trap (softmagic.c.dfee47f7_0.trap.tar.br) for libmagic.1.dylib.link (222 of 241)
+[2022-03-30 17:48:26] Importing 39810923_0.trap.br for libmagic.1.dylib.link (223 of 241)
+[2022-03-30 17:48:26] Importing 37021059_0.trap.br for libmagic.1.dylib.link (224 of 241)
+[2022-03-30 17:48:26] Importing 17774455_0.trap.br for libmagic.1.dylib.link (225 of 241)
+[2022-03-30 17:48:26] Importing 38027017_0.trap.br for libmagic.1.dylib.link (226 of 241)
+[2022-03-30 17:48:26] Importing 9750589_0.trap.br for libmagic.1.dylib.link (227 of 241)
+[2022-03-30 17:48:26] Importing 8477443_0.trap.br for libmagic.1.dylib.link (228 of 241)
+[2022-03-30 17:48:26] Importing 52716688_0.trap.br for libmagic.1.dylib.link (229 of 241)
+[2022-03-30 17:48:26] Importing 55123503_0.trap.br for libmagic.1.dylib.link (230 of 241)
+[2022-03-30 17:48:26] Importing 40465548_0.trap.br for libmagic.1.dylib.link (231 of 241)
+[2022-03-30 17:48:26] Importing 28112199_0.trap.br for libmagic.1.dylib.link (232 of 241)
+[2022-03-30 17:48:26] Importing 42346653_0.trap.br for libmagic.1.dylib.link (233 of 241)
+[2022-03-30 17:48:26] Importing 58005587_0.trap.br for file.link (234 of 241)
+[2022-03-30 17:48:26] Importing 39309719_0.trap.br for libmagic.1.dylib.link (235 of 241)
+[2022-03-30 17:48:26] Importing 34756435_0.trap.br for libmagic.1.dylib.link (236 of 241)
+[2022-03-30 17:48:26] Importing 38688897_0.trap.br for libmagic.1.dylib.link (237 of 241)
+[2022-03-30 17:48:26] Importing 28371374_0.trap.br for libmagic.1.dylib.link (238 of 241)
+[2022-03-30 17:48:26] Importing file.trap.br for file.link (239 of 241)
+[2022-03-30 17:48:26] Importing libmagic.1.dylib.trap.br for libmagic.1.dylib.link (240 of 241)
+[2022-03-30 17:48:26] Importing sourceLocationPrefix.trap.gz for no link target (241 of 241)
+[2022-03-30 17:48:26] Merging 1 fragment for files.
+[2022-03-30 17:48:26] Merging 1 fragment for numlines.
+[2022-03-30 17:48:26] Merging 1 fragment for locations_default.
+[2022-03-30 17:48:26] Merging 1 fragment for preprocdirects.
+[2022-03-30 17:48:26] Merging 1 fragment for preproctext.
+[2022-03-30 17:48:26] Merging 1 fragment for includes.
+[2022-03-30 17:48:26] Merging 1 fragment for functions.
+[2022-03-30 17:48:26] Merging 1 fragment for link_parent.
+[2022-03-30 17:48:26] Merging 1 fragment for function_return_type.
+[2022-03-30 17:48:26] Merging 1 fragment for derivedtypes.
+[2022-03-30 17:48:26] Merging 1 fragment for unspecifiedtype.
+[2022-03-30 17:48:26] Merging 1 fragment for pointerishsize.
+[2022-03-30 17:48:26] Merging 1 fragment for params.
+[2022-03-30 17:48:26] Merging 1 fragment for preprocfalse.
+[2022-03-30 17:48:26] Merging 1 fragment for preproctrue.
+[2022-03-30 17:48:26] Merging 1 fragment for fun_decls.
+[2022-03-30 17:48:26] Merging 1 fragment for fun_decl_specifiers.
+[2022-03-30 17:48:26] Merging 1 fragment for attributes.
+[2022-03-30 17:48:26] Merging 1 fragment for funcattributes.
+[2022-03-30 17:48:26] Merging 1 fragment for param_decl_bind.
+[2022-03-30 17:48:26] Merging 1 fragment for macroinvocations.
+[2022-03-30 17:48:26] Merging 1 fragment for comments.
+[2022-03-30 17:48:26] Merging 1 fragment for commentbinding.
+[2022-03-30 17:48:26] Merging 1 fragment for containerparent.
+[2022-03-30 17:48:26] Merging 1 fragment for folders.
+[2022-03-30 17:48:26] Merging 1 fragment for funspecifiers.
+[2022-03-30 17:48:26] Merging 1 fragment for typespecifiers.
+[2022-03-30 17:48:26] Merging 1 fragment for preprocpair.
+[2022-03-30 17:48:26] Merging 1 fragment for var_decls.
+[2022-03-30 17:48:26] Merging 1 fragment for usertypes.
+[2022-03-30 17:48:26] Merging 1 fragment for usertypesize.
+[2022-03-30 17:48:26] Merging 1 fragment for is_pod_class.
+[2022-03-30 17:48:26] Merging 1 fragment for is_standard_layout_class.
+[2022-03-30 17:48:26] Merging 1 fragment for is_complete.
+[2022-03-30 17:48:26] Merging 1 fragment for member.
+[2022-03-30 17:48:26] Merging 1 fragment for type_decls.
+[2022-03-30 17:48:26] Merging 1 fragment for type_def.
+[2022-03-30 17:48:26] Merging 1 fragment for type_decl_top.
+[2022-03-30 17:48:26] Merging 1 fragment for arraysizes.
+[2022-03-30 17:48:26] Merging 1 fragment for macroparent.
+[2022-03-30 17:48:26] Merging 1 fragment for values.
+[2022-03-30 17:48:26] Merging 1 fragment for locations_expr.
+[2022-03-30 17:48:26] Merging 1 fragment for exprs.
+[2022-03-30 17:48:26] Merging 1 fragment for expr_types.
+[2022-03-30 17:48:26] Merging 1 fragment for valuebind.
+[2022-03-30 17:48:26] Merging 1 fragment for membervariables.
+[2022-03-30 17:48:26] Merging 1 fragment for fieldoffsets.
+[2022-03-30 17:48:26] Merging 1 fragment for var_def.
+[2022-03-30 17:48:26] Merging 1 fragment for inmacroexpansion.
+[2022-03-30 17:48:26] Merging 1 fragment for mangled_name.
+[2022-03-30 17:48:26] Merging 1 fragment for macrolocationbind.
+[2022-03-30 17:48:26] Merging 1 fragment for varspecifiers.
+[2022-03-30 17:48:26] Merging 1 fragment for type_mentions.
+[2022-03-30 17:48:26] Merging 1 fragment for routinetypes.
+[2022-03-30 17:48:26] Merging 1 fragment for routinetypeargs.
+[2022-03-30 17:48:26] Merging 1 fragment for typedefbase.
+[2022-03-30 17:48:26] Merging 1 fragment for varattributes.
+[2022-03-30 17:48:26] Merging 1 fragment for attribute_arg_value.
+[2022-03-30 17:48:26] Merging 1 fragment for attribute_args.
+[2022-03-30 17:48:26] Merging 1 fragment for macro_argument_unexpanded.
+[2022-03-30 17:48:26] Merging 1 fragment for macro_argument_expanded.
+[2022-03-30 17:48:26] Merging 1 fragment for fileannotations.
+[2022-03-30 17:48:26] Merging 1 fragment for enclosingfunction.
+[2022-03-30 17:48:26] Merging 1 fragment for fun_def.
+[2022-03-30 17:48:26] Merging 1 fragment for locations_stmt.
+[2022-03-30 17:48:26] Merging 1 fragment for stmts.
+[2022-03-30 17:48:26] Merging 1 fragment for localvariables.
+[2022-03-30 17:48:26] Merging 1 fragment for stmt_decl_bind.
+[2022-03-30 17:48:26] Merging 1 fragment for stmt_decl_entry_bind.
+[2022-03-30 17:48:26] Merging 1 fragment for expr_isload.
+[2022-03-30 17:48:26] Merging 1 fragment for varbind.
+[2022-03-30 17:48:26] Merging 1 fragment for exprparents.
+[2022-03-30 17:48:26] Merging 1 fragment for compgenerated.
+[2022-03-30 17:48:26] Merging 1 fragment for valuetext.
+[2022-03-30 17:48:26] Merging 1 fragment for affectedbymacroexpansion.
+[2022-03-30 17:48:26] Merging 1 fragment for for_condition.
+[2022-03-30 17:48:26] Merging 1 fragment for stmtparents.
+[2022-03-30 17:48:26] Merging 1 fragment for if_then.
+[2022-03-30 17:48:26] Merging 1 fragment for funbind.
+[2022-03-30 17:48:26] Merging 1 fragment for for_body.
+[2022-03-30 17:48:26] Merging 1 fragment for for_initialization.
+[2022-03-30 17:48:26] Merging 1 fragment for for_update.
+[2022-03-30 17:48:26] Merging 1 fragment for jumpinfo.
+[2022-03-30 17:48:26] Merging 1 fragment for blockscope.
+[2022-03-30 17:48:26] Merging 1 fragment for function_entry_point.
+[2022-03-30 17:48:26] Merging 1 fragment for switch_body.
+[2022-03-30 17:48:26] Merging 1 fragment for switch_case.
+[2022-03-30 17:48:26] Merging 1 fragment for if_else.
+[2022-03-30 17:48:26] Merging 1 fragment for exprconv.
+[2022-03-30 17:48:26] Merging 1 fragment for initialisers.
+[2022-03-30 17:48:26] Merging 1 fragment for conversionkinds.
+[2022-03-30 17:48:26] Merging 1 fragment for iscall.
+[2022-03-30 17:48:26] Merging 1 fragment for while_body.
+[2022-03-30 17:48:26] Merging 1 fragment for var_decl_specifiers.
+[2022-03-30 17:48:26] Merging 1 fragment for sizeof_bind.
+[2022-03-30 17:48:26] Merging 1 fragment for expr_cond_guard.
+[2022-03-30 17:48:26] Merging 1 fragment for expr_cond_true.
+[2022-03-30 17:48:26] Merging 1 fragment for expr_cond_false.
+[2022-03-30 17:48:26] Merging 1 fragment for aggregate_field_init.
+[2022-03-30 17:48:26] Merging 1 fragment for aggregate_array_init.
+[2022-03-30 17:48:26] Merging 1 fragment for do_body.
+[2022-03-30 17:48:26] Merging 1 fragment for expr_ancestor.
+[2022-03-30 17:48:26] Merging 1 fragment for globalvariables.
+[2022-03-30 17:48:26] Merging 1 fragment for builtintypes.
+[2022-03-30 17:48:26] Merging 1 fragment for link_targets.
+[2022-03-30 17:48:26] Merging 1 fragment for namespaces.
+[2022-03-30 17:48:26] Merging 1 fragment for specialnamequalifyingelements.
+[2022-03-30 17:48:26] Merging 1 fragment for specifiers.
+[2022-03-30 17:48:26] Merging 1 fragment for enumconstants.
+[2022-03-30 17:48:26] Merging 1 fragment for bitfield.
+[2022-03-30 17:48:26] Merging 1 fragment for compilations.
+[2022-03-30 17:48:26] Merging 1 fragment for compilation_args.
+[2022-03-30 17:48:26] Merging 1 fragment for compilation_compiling_files.
+[2022-03-30 17:48:26] Merging 1 fragment for compilation_time.
+[2022-03-30 17:48:26] Merging 1 fragment for compilation_finished.
+[2022-03-30 17:48:26] Merging 1 fragment for sourceLocationPrefix.
+[2022-03-30 17:48:26] Saving string and id pools to disk.
+[2022-03-30 17:48:26] Finished importing trap files.
+[2022-03-30 17:48:26] Pausing evaluation to close the cache at sequence stamp o+3
+[2022-03-30 17:48:26] The disk cache is freshly trimmed; leave it be.
+[2022-03-30 17:48:26] Unpausing evaluation
+[2022-03-30 17:48:26] Plumbing command codeql dataset import completed.
+[2022-03-30 17:48:26] [PROGRESS] database finalize> TRAP import complete (1.3s).
+[2022-03-30 17:48:26] Running plumbing command: codeql database cleanup --mode=normal -- /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database
+[2022-03-30 17:48:26] [PROGRESS] database cleanup> Cleaning up existing TRAP files after import...
+[2022-03-30 17:48:26] [PROGRESS] database cleanup> TRAP files cleaned up (7ms).
+[2022-03-30 17:48:26] [PROGRESS] database cleanup> Cleaning up scratch directory...
+[2022-03-30 17:48:26] [PROGRESS] database cleanup> Scratch directory cleaned up (15ms).
+[2022-03-30 17:48:26] Running plumbing command: codeql dataset cleanup --mode=normal -- /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database/db-cpp
+[2022-03-30 17:48:26] [PROGRESS] dataset cleanup> Cleaning up dataset in /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database/db-cpp.
+[2022-03-30 17:48:26] Trimming disk cache at /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database/db-cpp/default/cache in mode normal.
+[2022-03-30 17:48:26] Sequence stamp origin is -6472872598517593734
+[2022-03-30 17:48:26] Pausing evaluation to zealously trim disk at sequence stamp o+0
+[2022-03-30 17:48:26] Unpausing evaluation
+[2022-03-30 17:48:26] Trimming completed (1ms): Trimmed disposable data from cache.
+[2022-03-30 17:48:26] Pausing evaluation to close the cache at sequence stamp o+1
+[2022-03-30 17:48:26] The disk cache is freshly trimmed; leave it be.
+[2022-03-30 17:48:26] Unpausing evaluation
+[2022-03-30 17:48:26] [PROGRESS] dataset cleanup> Trimmed disposable data from cache.
+[2022-03-30 17:48:26] [PROGRESS] dataset cleanup> Finalizing dataset in /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database/db-cpp
+[2022-03-30 17:48:26] [DETAILS] dataset cleanup> Finished deleting ID pool from /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database/db-cpp (1ms).
+[2022-03-30 17:48:26] Plumbing command codeql dataset cleanup completed.
+[2022-03-30 17:48:26] Plumbing command codeql database cleanup completed with status 0.
+[2022-03-30 17:48:26] Plumbing command codeql database finalize completed.
+[2022-03-30 17:48:26] [PROGRESS] database create> Successfully created database at /Users/owura/Repos/codeql_eval/proj_repos/file-file-commit-59e63838913eee47f5c120a6c53d4565af638158/code_ql_database.
+[2022-03-30 17:48:26] Terminating normally.

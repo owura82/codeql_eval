@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: "/Users/owura/Repos/codeql_eval/proj_repos/bagder-curl-commit-192c4f788d48f82c03e9cef40013f34370e90737/curl"
+baselineLinesOfCode: 93535
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  sha: "da0db499fd1fed3ab061d8c03d25c06164c9f429"
+  cliVersion: "2.8.0"
+  creationTime: "2022-03-30T22:13:31.645183Z"

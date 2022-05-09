@@ -1,0 +1,19 @@
+
+codeql database create ../code_ql_database --language=cpp --command='make'
+
+codeql database create ../code_ql_database --language=cpp --overwrite --command='make'
+
+codeql database analyze database --format=csv --output=./result.csv ~/repos/codeql-home/codeql-repo/cpp/ql/src/codeql-suites/cpp-code-scanning.qls
+
+
+codeql database analyze code_ql_database --format=csv --output=result.csv --off-heap-ram=0 ~/repos/codeql-home/codeql-repo/cpp/ql/src/Critical/DeadCodeFunction.ql ~/repos/codeql-home/codeql-repo/cpp/ql/src/Architecture/FeatureEnvy.ql
+
+~/repos/codeql-home/codeql-repo/cpp/ql/src
+
+~/repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-014/MemsetMayBeDeleted.ql
+
+~/repos/codeql-home/codeql-repo/cpp/ql/src/Summary
+
+codeql database analyze code_ql_database --format=csv --output=result.csv --off-heap-ram=0 ~/repos/codeql-home/codeql-repo/cpp/ql/src/Summary
+
+codeql database create ../../code_ql_database --language=cpp --command='make'

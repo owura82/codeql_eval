@@ -1,0 +1,233 @@
+[T 14:49:55 21358] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing15127818812792035333.spec...
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/configure
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: <null>
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/do-prebuild
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: <null>
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/*-as
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:49:55 21358] Prepend[0] "--assembler"
+[T 14:49:55 21358] Prepend[1] "--codeql-assembler-executable"
+[T 14:49:55 21358] Prepend[2] "${compiler}"
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/as
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:49:55 21358] Prepend[0] "--assembler"
+[T 14:49:55 21358] Prepend[1] "--codeql-assembler-executable"
+[T 14:49:55 21358] Prepend[2] "${compiler}"
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/collect2
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:49:55 21358] Prepend[0] "--linker"
+[T 14:49:55 21358] Prepend[1] "--semmle-linker-executable"
+[T 14:49:55 21358] Prepend[2] "${compiler}"
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/lld*
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:49:55 21358] Prepend[0] "--linker"
+[T 14:49:55 21358] Prepend[1] "--semmle-linker-executable"
+[T 14:49:55 21358] Prepend[2] "${compiler}"
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/*-ld*
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:49:55 21358] Prepend[0] "--linker"
+[T 14:49:55 21358] Prepend[1] "--semmle-linker-executable"
+[T 14:49:55 21358] Prepend[2] "${compiler}"
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/ld*
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:49:55 21358] Prepend[0] "--linker"
+[T 14:49:55 21358] Prepend[1] "--semmle-linker-executable"
+[T 14:49:55 21358] Prepend[2] "${compiler}"
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/armlink
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:49:55 21358] Prepend[0] "--arm-linker"
+[T 14:49:55 21358] Prepend[1] "--semmle-linker-executable"
+[T 14:49:55 21358] Prepend[2] "${compiler}"
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/icpc
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:49:55 21358] Prepend[0] "--mimic"
+[T 14:49:55 21358] Prepend[1] "${compiler}"
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/*++*
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:49:55 21358] Prepend[0] "--mimic"
+[T 14:49:55 21358] Prepend[1] "${compiler}"
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/*cc*
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:49:55 21358] Prepend[0] "--mimic"
+[T 14:49:55 21358] Prepend[1] "${compiler}"
+[T 14:49:55 21358] Compilers file as of 2022-04-03 14:49:55
+[T 14:49:55 21358] Compiler pattern: **/*clang*
+[T 14:49:55 21358] Replace intercepted call: 0
+[T 14:49:55 21358] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:49:55 21358] Prepend[0] "--mimic"
+[T 14:49:55 21358] Prepend[1] "${compiler}"
+[T 14:49:55 21358] Initialising tags...
+[T 14:49:55 21358] ID set to 000000000000536E_0000000000000001 (parent root)
+[T 14:49:55 21358] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing15127818812792035333.spec...
+[T 14:49:55 21358] Initialising tags...
+[T 14:49:55 21358] ID set to 000000000000536E_0000000000000002 (parent root)
+[T 14:49:55 21358] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 14:49:55 21358] ==== Candidate to intercept: /Users/owura/repos/codeql-home/codeql/tools/osx64/runner-osx (canonical: /Users/owura/Repos/codeql-home/codeql/tools/osx64/runner-osx) ====
+[T 14:49:55 21359] Attempting to switch stdout/stderr to 3...
+/Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/copy-root/000001F5/bin/sh.semmle.0000536E.slice.x86_64: replacing existing signature
+[T 14:49:55 21358] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing15127818812792035333.spec...
+[T 14:49:55 21358] Initialising tags...
+[T 14:49:55 21358] ID set to 000000000000536E_0000000000000003 (parent 000000000000536E_0000000000000002)
+[T 14:49:55 21358] ==== Candidate to intercept: ./build.sh (canonical: /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/exiv2/build.sh) ====
+[T 14:49:55 21365] Attempting to switch stdout/stderr to 3...
+/Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/copy-root/000001F5/bin/bash.semmle.0000536E.slice.x86_64: replacing existing signature
+[T 14:49:55 21358] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing15127818812792035333.spec...
+[T 14:49:55 21358] Initialising tags...
+[T 14:49:55 21358] ID set to 000000000000536E_0000000000000004 (parent 000000000000536E_0000000000000003)
+[T 14:49:55 21358] ==== Candidate to intercept: /bin/bash (canonical: /bin/bash) ====
+[T 14:49:56 21370] Attempting to switch stdout/stderr to 3...
+[T 14:49:56 21369] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing15127818812792035333.spec...
+[T 14:49:56 21369] Initialising tags...
+[T 14:49:56 21369] ID set to 0000000000005379_0000000000000001 (parent 000000000000536E_0000000000000004)
+[T 14:49:56 21369] ==== Candidate to intercept: /usr/local/bin/cmake (canonical: /usr/local/Cellar/cmake/3.15.5/bin/cmake) ====
+[T 14:49:56 21377] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing15127818812792035333.spec...
+[T 14:49:56 21377] Initialising tags...
+[T 14:49:56 21377] ID set to 0000000000005381_0000000000000001 (parent 000000000000536E_0000000000000004)
+[T 14:49:56 21377] ==== Candidate to intercept: /usr/local/bin/cmake (canonical: /usr/local/Cellar/cmake/3.15.5/bin/cmake) ====
+[T 14:49:56 21379] Attempting to switch stdout/stderr to 3...
+/Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/copy-root/000001F5/usr/bin/make.semmle.00005382.slice.x86_64: replacing existing signature
+[T 14:49:57 21378] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing15127818812792035333.spec...
+[T 14:49:57 21378] Initialising tags...
+[T 14:49:57 21378] ID set to 0000000000005382_0000000000000001 (parent 000000000000536E_0000000000000004)
+[T 14:49:57 21378] ==== Candidate to intercept: /usr/bin/make (canonical: /usr/bin/make) ====
+[T 14:49:57 21383] Attempting to switch stdout/stderr to 3...
+/Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/copy-root/000001F5/Applications/Xcode.app/Contents/Developer/usr/bin/make.semmle.00005382.slice.x86_64: replacing existing signature
+/Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/copy-root/000001F5/Applications/Xcode.app/Contents/Developer/usr/bin/make.semmle.00005382.slice.arm64: replacing existing signature
+[T 14:49:57 21378] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing15127818812792035333.spec...
+[T 14:49:57 21378] Initialising tags...
+[T 14:49:57 21378] ID set to 0000000000005382_0000000000000002 (parent 0000000000005382_0000000000000001)
+[T 14:49:57 21378] ==== Candidate to intercept: /Applications/Xcode.app/Contents/Developer/usr/bin/make (canonical: /Applications/Xcode.app/Contents/Developer/usr/bin/make) ====
+[T 14:51:26 21544] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing883775074416226464.spec...
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/configure
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: <null>
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/do-prebuild
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: <null>
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/*-as
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:51:26 21544] Prepend[0] "--assembler"
+[T 14:51:26 21544] Prepend[1] "--codeql-assembler-executable"
+[T 14:51:26 21544] Prepend[2] "${compiler}"
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/as
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:51:26 21544] Prepend[0] "--assembler"
+[T 14:51:26 21544] Prepend[1] "--codeql-assembler-executable"
+[T 14:51:26 21544] Prepend[2] "${compiler}"
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/collect2
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:51:26 21544] Prepend[0] "--linker"
+[T 14:51:26 21544] Prepend[1] "--semmle-linker-executable"
+[T 14:51:26 21544] Prepend[2] "${compiler}"
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/lld*
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:51:26 21544] Prepend[0] "--linker"
+[T 14:51:26 21544] Prepend[1] "--semmle-linker-executable"
+[T 14:51:26 21544] Prepend[2] "${compiler}"
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/*-ld*
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:51:26 21544] Prepend[0] "--linker"
+[T 14:51:26 21544] Prepend[1] "--semmle-linker-executable"
+[T 14:51:26 21544] Prepend[2] "${compiler}"
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/ld*
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:51:26 21544] Prepend[0] "--linker"
+[T 14:51:26 21544] Prepend[1] "--semmle-linker-executable"
+[T 14:51:26 21544] Prepend[2] "${compiler}"
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/armlink
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:51:26 21544] Prepend[0] "--arm-linker"
+[T 14:51:26 21544] Prepend[1] "--semmle-linker-executable"
+[T 14:51:26 21544] Prepend[2] "${compiler}"
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/icpc
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:51:26 21544] Prepend[0] "--mimic"
+[T 14:51:26 21544] Prepend[1] "${compiler}"
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/*++*
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:51:26 21544] Prepend[0] "--mimic"
+[T 14:51:26 21544] Prepend[1] "${compiler}"
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/*cc*
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:51:26 21544] Prepend[0] "--mimic"
+[T 14:51:26 21544] Prepend[1] "${compiler}"
+[T 14:51:26 21544] Compilers file as of 2022-04-03 14:51:26
+[T 14:51:26 21544] Compiler pattern: **/*clang*
+[T 14:51:26 21544] Replace intercepted call: 0
+[T 14:51:26 21544] Extractor: /Users/owura/Repos/codeql-home/codeql/cpp/tools/osx64/extractor
+[T 14:51:26 21544] Prepend[0] "--mimic"
+[T 14:51:26 21544] Prepend[1] "${compiler}"
+[T 14:51:26 21544] Initialising tags...
+[T 14:51:26 21544] ID set to 0000000000005428_0000000000000001 (parent root)
+[T 14:51:26 21544] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing883775074416226464.spec...
+[T 14:51:26 21544] Initialising tags...
+[T 14:51:26 21544] ID set to 0000000000005428_0000000000000002 (parent root)
+[T 14:51:26 21544] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 14:51:26 21544] ==== Candidate to intercept: /Users/owura/repos/codeql-home/codeql/tools/osx64/runner-osx (canonical: /Users/owura/Repos/codeql-home/codeql/tools/osx64/runner-osx) ====
+[T 14:51:26 21546] Attempting to switch stdout/stderr to 3...
+/Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/copy-root/000001F5/bin/sh.semmle.00005428.slice.x86_64: replacing existing signature
+[T 14:51:26 21544] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing883775074416226464.spec...
+[T 14:51:26 21544] Initialising tags...
+[T 14:51:26 21544] ID set to 0000000000005428_0000000000000003 (parent 0000000000005428_0000000000000002)
+[T 14:51:26 21544] ==== Candidate to intercept: ./build.sh (canonical: /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/exiv2/build.sh) ====
+[T 14:51:26 21550] Attempting to switch stdout/stderr to 3...
+/Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/copy-root/000001F5/bin/bash.semmle.00005428.slice.x86_64: replacing existing signature
+[T 14:51:26 21544] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing883775074416226464.spec...
+[T 14:51:26 21544] Initialising tags...
+[T 14:51:26 21544] ID set to 0000000000005428_0000000000000004 (parent 0000000000005428_0000000000000003)
+[T 14:51:26 21544] ==== Candidate to intercept: /bin/bash (canonical: /bin/bash) ====
+[T 14:51:26 21556] Attempting to switch stdout/stderr to 3...
+[T 14:51:27 21554] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing883775074416226464.spec...
+[T 14:51:27 21554] Initialising tags...
+[T 14:51:27 21554] ID set to 0000000000005432_0000000000000001 (parent 0000000000005428_0000000000000004)
+[T 14:51:27 21554] ==== Candidate to intercept: /usr/local/bin/cmake (canonical: /usr/local/Cellar/cmake/3.15.5/bin/cmake) ====
+[T 14:51:27 21560] Reading configuration file /Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/code_ql_database/working/tracing/compiler-tracing883775074416226464.spec...
+[T 14:51:27 21560] Initialising tags...
+[T 14:51:27 21560] ID set to 0000000000005438_0000000000000001 (parent 0000000000005428_0000000000000004)
+[T 14:51:27 21560] ==== Candidate to intercept: /usr/local/bin/cmake (canonical: /usr/local/Cellar/cmake/3.15.5/bin/cmake) ====

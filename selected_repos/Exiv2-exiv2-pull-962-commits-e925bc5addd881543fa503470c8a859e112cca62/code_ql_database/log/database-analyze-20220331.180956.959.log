@@ -1,0 +1,159 @@
+[2022-03-31 18:09:56] This is codeql database analyze proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database --format=csv --output=proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/result.csv --off-heap-ram=0 /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190
+[2022-03-31 18:09:56] Log file was started late.
+[2022-03-31 18:09:56] [PROGRESS] database analyze> Running queries.
+[2022-03-31 18:09:57] Running plumbing command: codeql database run-queries --evaluator-log-level=1 --insecurely-execute-ml-model-checksums= --off-heap-ram=0 --warnings=show --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --no-rerun -- /Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190
+[2022-03-31 18:09:57] Calling plumbing command: codeql resolve ram --off-heap-ram=0 --format=json
+[2022-03-31 18:09:57] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx4096M",
+                        "--off-heap-ram=0"
+                      ]
+[2022-03-31 18:09:57] Spawning plumbing command: execute queries -J-Xmx4096M --off-heap-ram=0 --verbosity=progress --logdir=/Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/log --evaluator-log-level=1 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --no-rerun --output=/Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/results -- /Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/db-cpp /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190
+[2022-03-31 18:11:42] Plumbing command codeql execute queries terminated with status 0.
+[2022-03-31 18:11:42] Plumbing command codeql database run-queries completed with status 0.
+[2022-03-31 18:11:42] [PROGRESS] database analyze> Interpreting results.
+[2022-03-31 18:11:42] Running plumbing command: codeql database interpret-results --format=csv -o=/Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/result.csv --max-paths=4 --csv-location-format=line-column --print-diagnostics-summary --print-metrics-summary -- /Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190
+[2022-03-31 18:11:42] Calling plumbing command: codeql resolve queries --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --format=json -- /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190
+[2022-03-31 18:11:43] [SPAMMY] resolve queries> Scanning for QL files at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190.
+[2022-03-31 18:11:43] [SPAMMY] resolve queries> Found 6 QL files in /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190.
+[2022-03-31 18:11:43] Plumbing command codeql resolve queries completed:
+                      [
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql",
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql"
+                      ]
+[2022-03-31 18:11:43] [DETAILS] database interpret-results> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/repos/codeql-home/codeql/.codeqlmanifest.json
+[2022-03-31 18:11:43] [DETAILS] database interpret-results> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/repos/codeql-home/
+[2022-03-31 18:11:43] [DETAILS] database interpret-results> Not scanning from /Users/owura/repos/codeql-home/codeql which is already done.
+[2022-03-31 18:11:43] [DETAILS] database interpret-results> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/repos/codeql-home/codeql-repo/.codeqlmanifest.json
+[2022-03-31 18:11:43] [PROGRESS] database interpret-results> Interpreting /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql...
+[2022-03-31 18:11:43] Calling plumbing command: codeql resolve library-path --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql --full-library-path=none --dbscheme=none --format=json
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql.
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Dbscheme was explicitly overridden as /Users/owura/Repos/codeql_eval/none
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Library path was overridden on command line.
+[2022-03-31 18:11:43] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql_eval/none"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql_eval/none",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/ArithmeticTainted.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:11:43] [DETAILS] database interpret-results>  ... found results file at /Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/results/codeql/cpp-queries/Security/CWE/CWE-190/ArithmeticTainted.bqrs.
+[2022-03-31 18:11:43] [DETAILS] database interpret-results> Intepreted pathproblem query "User-controlled data in arithmetic expression" (cpp/tainted-arithmetic) at path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticTainted.ql.
+[2022-03-31 18:11:43] [PROGRESS] database interpret-results> Interpreting /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql...
+[2022-03-31 18:11:43] Calling plumbing command: codeql resolve library-path --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql --full-library-path=none --dbscheme=none --format=json
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql.
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Dbscheme was explicitly overridden as /Users/owura/Repos/codeql_eval/none
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Library path was overridden on command line.
+[2022-03-31 18:11:43] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql_eval/none"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql_eval/none",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/ArithmeticUncontrolled.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:11:43] [DETAILS] database interpret-results>  ... found results file at /Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/results/codeql/cpp-queries/Security/CWE/CWE-190/ArithmeticUncontrolled.bqrs.
+[2022-03-31 18:11:43] [DETAILS] database interpret-results> Intepreted pathproblem query "Uncontrolled data in arithmetic expression" (cpp/uncontrolled-arithmetic) at path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticUncontrolled.ql.
+[2022-03-31 18:11:43] [PROGRESS] database interpret-results> Interpreting /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql...
+[2022-03-31 18:11:43] Calling plumbing command: codeql resolve library-path --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql --full-library-path=none --dbscheme=none --format=json
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql.
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Dbscheme was explicitly overridden as /Users/owura/Repos/codeql_eval/none
+[2022-03-31 18:11:43] [DETAILS] resolve library-path> Library path was overridden on command line.
+[2022-03-31 18:11:43] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql_eval/none"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql_eval/none",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:11:43] [DETAILS] database interpret-results>  ... found results file at /Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/results/codeql/cpp-queries/Security/CWE/CWE-190/ArithmeticWithExtremeValues.bqrs.
+[2022-03-31 18:11:43] [DETAILS] database interpret-results> Intepreted problem query "Use of extreme values in arithmetic expression" (cpp/arithmetic-with-extreme-values) at path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ArithmeticWithExtremeValues.ql.
+[2022-03-31 18:11:43] [PROGRESS] database interpret-results> Interpreting /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql...
+[2022-03-31 18:11:43] Calling plumbing command: codeql resolve library-path --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql --full-library-path=none --dbscheme=none --format=json
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql.
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Dbscheme was explicitly overridden as /Users/owura/Repos/codeql_eval/none
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Library path was overridden on command line.
+[2022-03-31 18:11:44] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql_eval/none"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql_eval/none",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/ComparisonWithWiderType.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:11:44] [DETAILS] database interpret-results>  ... found results file at /Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/results/codeql/cpp-queries/Security/CWE/CWE-190/ComparisonWithWiderType.bqrs.
+[2022-03-31 18:11:44] [DETAILS] database interpret-results> Intepreted problem query "Comparison of narrow type with wide type in loop condition" (cpp/comparison-with-wider-type) at path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql.
+[2022-03-31 18:11:44] [PROGRESS] database interpret-results> Interpreting /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql...
+[2022-03-31 18:11:44] Calling plumbing command: codeql resolve library-path --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql --full-library-path=none --dbscheme=none --format=json
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql.
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Dbscheme was explicitly overridden as /Users/owura/Repos/codeql_eval/none
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Library path was overridden on command line.
+[2022-03-31 18:11:44] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql_eval/none"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql_eval/none",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/IntegerOverflowTainted.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:11:44] [DETAILS] database interpret-results>  ... found results file at /Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/results/codeql/cpp-queries/Security/CWE/CWE-190/IntegerOverflowTainted.bqrs.
+[2022-03-31 18:11:44] [DETAILS] database interpret-results> Intepreted problem query "Potential integer arithmetic overflow" (cpp/integer-overflow-tainted) at path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/IntegerOverflowTainted.ql.
+[2022-03-31 18:11:44] [PROGRESS] database interpret-results> Interpreting /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql...
+[2022-03-31 18:11:44] Calling plumbing command: codeql resolve library-path --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql --full-library-path=none --dbscheme=none --format=json
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql.
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Dbscheme was explicitly overridden as /Users/owura/Repos/codeql_eval/none
+[2022-03-31 18:11:44] [DETAILS] resolve library-path> Library path was overridden on command line.
+[2022-03-31 18:11:44] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql_eval/none"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql_eval/none",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-190/TaintedAllocationSize.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-03-31 18:11:44] [DETAILS] database interpret-results>  ... found results file at /Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/code_ql_database/results/codeql/cpp-queries/Security/CWE/CWE-190/TaintedAllocationSize.bqrs.
+[2022-03-31 18:11:44] [DETAILS] database interpret-results> Intepreted pathproblem query "Overflow in uncontrolled allocation size" (cpp/uncontrolled-allocation-size) at path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-190/TaintedAllocationSize.ql.
+[2022-03-31 18:11:44] Plumbing command codeql database interpret-results completed.
+[2022-03-31 18:11:44] Terminating normally.

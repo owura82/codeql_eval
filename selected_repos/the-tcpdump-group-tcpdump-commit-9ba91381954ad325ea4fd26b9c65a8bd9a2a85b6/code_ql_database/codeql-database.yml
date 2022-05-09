@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: "/Users/owura/Repos/codeql_eval/proj_repos/the-tcpdump-group-tcpdump-commit-9ba91381954ad325ea4fd26b9c65a8bd9a2a85b6/tcpdump"
+baselineLinesOfCode: 77513
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  sha: "e01c9bf76740802025c9328901b55ee4a0c49ed6"
+  cliVersion: "2.8.0"
+  creationTime: "2022-03-29T22:36:02.108125Z"

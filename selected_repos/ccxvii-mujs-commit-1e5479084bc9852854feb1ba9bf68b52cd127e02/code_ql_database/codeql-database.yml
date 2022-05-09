@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: "/Users/owura/Repos/codeql_eval/proj_repos/ccxvii-mujs-commit-1e5479084bc9852854feb1ba9bf68b52cd127e02/mujs"
+baselineLinesOfCode: 15017
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  sha: "1e5479084bc9852854feb1ba9bf68b52cd127e02"
+  cliVersion: "2.8.0"
+  creationTime: "2022-03-22T21:59:19.942743Z"

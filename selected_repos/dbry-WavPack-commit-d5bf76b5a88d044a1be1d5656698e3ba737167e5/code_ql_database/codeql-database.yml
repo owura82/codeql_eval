@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: "/Users/owura/Repos/codeql_eval/proj_repos/dbry-WavPack-commit-d5bf76b5a88d044a1be1d5656698e3ba737167e5/WavPack"
+baselineLinesOfCode: 32966
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  sha: "d5bf76b5a88d044a1be1d5656698e3ba737167e5"
+  cliVersion: "2.8.0"
+  creationTime: "2022-03-29T22:16:54.357738Z"

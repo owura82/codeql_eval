@@ -1,0 +1,190 @@
+[2022-04-01 12:00:04] This is codeql execute queries -J-Xmx4096M --off-heap-ram=0 --verbosity=progress --logdir=/Users/owura/Repos/codeql_eval/proj_repos/dbry-WavPack-commit-070ef6f138956d9ea9612e69586152339dbefe51/code_ql_database/log --evaluator-log-level=1 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --no-rerun --output=/Users/owura/Repos/codeql_eval/proj_repos/dbry-WavPack-commit-070ef6f138956d9ea9612e69586152339dbefe51/code_ql_database/results -- /Users/owura/Repos/codeql_eval/proj_repos/dbry-WavPack-commit-070ef6f138956d9ea9612e69586152339dbefe51/code_ql_database/db-cpp /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835
+[2022-04-01 12:00:04] Calling plumbing command: codeql resolve queries --format=json -- /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835
+[2022-04-01 12:00:05] [SPAMMY] resolve queries> Scanning for QL files at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835.
+[2022-04-01 12:00:05] [SPAMMY] resolve queries> Found 1 QL files in /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835.
+[2022-04-01 12:00:05] Plumbing command codeql resolve queries completed:
+                      [
+                        "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql"
+                      ]
+[2022-04-01 12:00:05] Creating executor with 1 threads.
+[2022-04-01 12:00:05] Calling plumbing command: codeql resolve library-path --qlconfig-file=/Users/owura/Repos/codeql_eval/qlconfig.yml --query=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql --format=json
+[2022-04-01 12:00:05] [DETAILS] resolve library-path> Resolving query at normalized path /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql.
+[2022-04-01 12:00:05] [DETAILS] resolve library-path> Found enclosing pack 'codeql/cpp-queries' at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src.
+[2022-04-01 12:00:05] [DETAILS] resolve library-path> Adding compilation cache at /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache.
+[2022-04-01 12:00:05] [DETAILS] resolve library-path> Resolving library dependencies from /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/qlpack.yml.
+[2022-04-01 12:00:06] [DETAILS] resolve library-path> QL pack dependencies for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src resolved OK.
+[2022-04-01 12:00:06] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2022-04-01 12:00:06] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib",
+                          "/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers"
+                        ],
+                        "dbscheme" : "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/cpp-queries/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql",
+                        "qlPackName" : "codeql/cpp-queries"
+                      }
+[2022-04-01 12:00:06] Calling plumbing command: codeql resolve ml-models --search-path=/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src:/Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib:/Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers --insecurely-execute-ml-model-checksums=
+[2022-04-01 12:00:06] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/
+[2022-04-01 12:00:06] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/lib/
+[2022-04-01 12:00:06] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/Repos/codeql-home/codeql-repo/misc/suite-helpers/
+[2022-04-01 12:00:06] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/repos/codeql-home/codeql/.codeqlmanifest.json
+[2022-04-01 12:00:06] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/repos/codeql-home/
+[2022-04-01 12:00:06] [DETAILS] resolve ml-models> Not scanning from /Users/owura/repos/codeql-home/codeql which is already done.
+[2022-04-01 12:00:06] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/owura/repos/codeql-home/codeql-repo/.codeqlmanifest.json
+[2022-04-01 12:00:06] Plumbing command codeql resolve ml-models completed:
+                      {
+                        "models" : [ ]
+                      }
+[2022-04-01 12:00:06] [PROGRESS] execute queries> Compiling query plan for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql.
+[2022-04-01 12:00:06] [DETAILS] execute queries> Resolving imports for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql.
+[2022-04-01 12:00:07] Resolved file set for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql hashes to 08140607b1bdf4b1185a11225a1fa4dd46015f3d.
+[2022-04-01 12:00:07] [DETAILS] execute queries> Compilation cache hit for /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql.
+[2022-04-01 12:00:07] [PROGRESS] execute queries> [1/1] Found in cache: /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql.
+[2022-04-01 12:00:07] [PROGRESS] execute queries> Starting evaluation of codeql/cpp-queries/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql.
+[2022-04-01 12:00:07] Starting evaluation of /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql
+[2022-04-01 12:00:07] (0s) Start query execution
+[2022-04-01 12:00:07] (0s) Beginning execution of ResolveClass::Cached::isClass#f ResolveClass::Cached::isType#f ResolveClass::Cached::resolveClass#ff
+[2022-04-01 12:00:07] (0s) Beginning execution of Enclosing::exprEnclosingElement#ff Enclosing::stmtEnclosingElement#ff
+[2022-04-01 12:00:07] (0s) Beginning execution of QualifiedName::declarationHasQualifiedName#ffff
+[2022-04-01 12:00:07] (0s) Beginning execution of Expr::Expr::getFullyConverted_dispred#ff
+[2022-04-01 12:00:07] (0s) Beginning execution of Expr::Expr::getType_dispred#ff
+[2022-04-01 12:00:07] (0s) Beginning execution of EscapesTree::EscapesTree_Cached::variableAddressEscapesTree#ff EscapesTree::EscapesTree_Cached::variableAddressEscapesTreeNonConst#ff EscapesTree::EscapesTree_Cached::variableAccessedAsValue#ff
+[2022-04-01 12:00:07] (0s) Beginning execution of Element::Element::getEnclosingElement_dispred#ff
+[2022-04-01 12:00:07] (0s) Beginning execution of Expr::Expr::isConstant_dispred#f
+[2022-04-01 12:00:07] (0s) Beginning execution of CFG::Cached::qlCFGTrueSuccessor#ff CFG::Cached::qlCFGFalseSuccessor#ff CFG::Cached::qlCFGSuccessor#ff
+[2022-04-01 12:00:07] (0s) Beginning execution of PrimitiveBasicBlocks::Cached::primitive_basic_block_member#fff PrimitiveBasicBlocks::Cached::primitive_bb_length#ff PrimitiveBasicBlocks::Cached::primitive_bb_successor#ff PrimitiveBasicBlocks::Cached::primitive_basic_block_entry_node#f
+[2022-04-01 12:00:07] (0s) Beginning execution of ConstantExprs::Cached::aborting#f ConstantExprs::Cached::abortingFunction#f ConstantExprs::Cached::ControlFlowGraphPublic::reachable#f ConstantExprs::Cached::ControlFlowGraphPublic::conditionAlwaysTrue#f ConstantExprs::Cached::ControlFlowGraphPublic::conditionAlwaysFalse#f ConstantExprs::Cached::ControlFlowGraphPublic::loopConditionAlwaysTrueUponEntry#ff ConstantExprs::Cached::successors_adapted#ff
+[2022-04-01 12:00:07] (0s) Beginning execution of BasicBlocks::Cached::bb_successor_cached#ff BasicBlocks::Cached::basic_block_entry_node#f BasicBlocks::Cached::basic_block_member#fff BasicBlocks::Cached::bb_length#ff
+[2022-04-01 12:00:07] (0s) Beginning execution of SSAUtils::SSAHelper::toString_dispred#ffff SSAUtils::SSAHelper::ssaDefinitionReachesEndOfBB_dispred#ffff SSAUtils::SSAHelper::custom_phi_node_dispred#fff SSAUtils::SSAHelper::phi_node_dispred#fff SSAUtils::SSAHelper::ssa_defn_dispred#fffff SSAUtils::SSAHelper#class#f SSAUtils::SSAHelper::getAUse_dispred#ffff SSAUtils::SSAHelper#f
+[2022-04-01 12:00:07] (0s) Beginning execution of SimpleRangeAnalysis::SimpleRangeAnalysisCached::upperBoundMayBeWidened#f SimpleRangeAnalysis::SimpleRangeAnalysisCached::upperBound#ff SimpleRangeAnalysis::SimpleRangeAnalysisCached::lowerBound#ff SimpleRangeAnalysis::SimpleRangeAnalysisCached::exprWithEmptyRange#f SimpleRangeAnalysis::SimpleRangeAnalysisCached::defMightOverflow#ff SimpleRangeAnalysis::SimpleRangeAnalysisCached::convertedExprMightOverflowNegatively#f SimpleRangeAnalysis::SimpleRangeAnalysisCached::defMightOverflowNegatively#ff SimpleRangeAnalysis::SimpleRangeAnalysisCached::defMightOverflowPositively#ff SimpleRangeAnalysis::SimpleRangeAnalysisCached::exprMightOverflowNegatively#f SimpleRangeAnalysis::SimpleRangeAnalysisCached::exprMightOverflowPositively#f SimpleRangeAnalysis::SimpleRangeAnalysisCached::convertedExprMightOverflowPositively#f SimpleRangeAnalysis::SimpleRangeAnalysisCached::convertedExprMightOverflow#f
+[2022-04-01 12:00:07] (0s) Inferred that PointlessComparison::reachablePointlessComparison#fffff#antijoin_rhs/1@263bcc3m is empty, due to SimpleRangeAnalysis::SimpleRangeAnalysisCached::exprWithEmptyRange#f/1@86c03d6i.
+[2022-04-01 12:00:07] (0s)  >>> Created relation PointlessComparison::reachablePointlessComparison#fffff#antijoin_rhs/1@263bcc3m with 0 rows.
+[2022-04-01 12:00:07] (0s) Beginning execution of Element::ElementBase::toString_dispred#ff
+[2022-04-01 12:00:07] (0s) Beginning execution of InfiniteLoopWithUnsatisfiableExitCondition.ql
+[2022-04-01 12:00:07] (0s)  >>> Created relation function_entry_point/2@ce22d5k5 with 417 rows.
+[2022-04-01 12:00:07] (0s) Starting to evaluate predicate function_entry_point_1#higher_order_body/1@12ec5574
+[2022-04-01 12:00:07] (0s)  >>> Created relation function_entry_point_1#higher_order_body/1@12ec5574 with 417 rows.
+[2022-04-01 12:00:07] (0s)  >>> Created relation exprs/3@078687ia with 102450 rows.
+[2022-04-01 12:00:07] (0s) Starting to evaluate predicate exprs_10#join_rhs/2@6d0aeb5h
+[2022-04-01 12:00:08] (0s)  >>> Created relation exprs_10#join_rhs/2@6d0aeb5h with 102450 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate m#PointlessComparison::alwaysLE#cpe#123#bff/1@eb5d6ent
+[2022-04-01 12:00:08] (0s)  >>> Created relation m#PointlessComparison::alwaysLE#cpe#123#bff/1@eb5d6ent with 703 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate m#PointlessComparison::alwaysGE#cpe#123#bff/1@967b3bir
+[2022-04-01 12:00:08] (0s)  >>> Created relation m#PointlessComparison::alwaysGE#cpe#123#bff/1@967b3bir with 650 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate m#PointlessComparison::alwaysGT#cpe#123#bff/1@0556ddc4
+[2022-04-01 12:00:08] (0s)  >>> Created relation m#PointlessComparison::alwaysGT#cpe#123#bff/1@0556ddc4 with 1744 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate m#PointlessComparison::alwaysLT#cpe#123#bff/1@ccb515gs
+[2022-04-01 12:00:08] (0s)  >>> Created relation m#PointlessComparison::alwaysLT#cpe#123#bff/1@ccb515gs with 1691 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate m#Expr::BinaryOperation::getLeftOperand_dispred#bf/1@0e9afdoh
+[2022-04-01 12:00:08] (0s)  >>> Created relation m#Expr::BinaryOperation::getLeftOperand_dispred#bf/1@0e9afdoh with 2394 rows.
+[2022-04-01 12:00:08] (0s)  >>> Created relation exprparents/3@c6c501mt with 80387 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate exprparents_201#join_rhs/3@8b566bi0
+[2022-04-01 12:00:08] (0s)  >>> Created relation exprparents_201#join_rhs/3@8b566bi0 with 80387 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate Expr::Expr::getChild_dispred#fff/3@bb187cn8
+[2022-04-01 12:00:08] (0s)  >>> Created relation Expr::Expr::getChild_dispred#fff/3@bb187cn8 with 67486 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate Expr::BinaryOperation::getLeftOperand_dispred#bf/2@5cfe14d7
+[2022-04-01 12:00:08] (0s)  >>> Created relation Expr::BinaryOperation::getLeftOperand_dispred#bf/2@5cfe14d7 with 2394 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate Expr::BinaryOperation::getRightOperand_dispred#bf/2@a0a876lu
+[2022-04-01 12:00:08] (0s)  >>> Created relation Expr::BinaryOperation::getRightOperand_dispred#bf/2@a0a876lu with 2394 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate m#PointlessComparison::upperBoundFC#bf/1@ccb3b4ks
+[2022-04-01 12:00:08] (0s)  >>> Created relation m#PointlessComparison::upperBoundFC#bf/1@ccb3b4ks with 4788 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate PointlessComparison::upperBoundFC#bf/2@1c03c2mf
+[2022-04-01 12:00:08] (0s)  >>> Created relation PointlessComparison::upperBoundFC#bf/2@1c03c2mf with 4416 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate m#PointlessComparison::lowerBoundFC#bf/1@7db3cfbg
+[2022-04-01 12:00:08] (0s)  >>> Created relation m#PointlessComparison::lowerBoundFC#bf/1@7db3cfbg with 4788 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate PointlessComparison::lowerBoundFC#bf/2@22dad9gl
+[2022-04-01 12:00:08] (0s)  >>> Created relation PointlessComparison::lowerBoundFC#bf/2@22dad9gl with 4416 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate dom#RangeAnalysisUtils::Greater#/0@f34704u1
+[2022-04-01 12:00:08] (0s)  >>> Created relation dom#RangeAnalysisUtils::Greater#/0@f34704u1 with 1 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate num#PointlessComparison::LeftIsSmaller#f/1@1a5f79de
+[2022-04-01 12:00:08] (0s)  >>> Created relation num#PointlessComparison::LeftIsSmaller#f/1@1a5f79de with 1 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate PointlessComparison::alwaysLT#cpe#123#bff/3@03e446jm
+[2022-04-01 12:00:08] (0s)  >>> Created relation PointlessComparison::alwaysLT#cpe#123#bff/3@03e446jm with 0 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate num#PointlessComparison::RightIsSmaller#f/1@bd21941i
+[2022-04-01 12:00:08] (0s)  >>> Created relation num#PointlessComparison::RightIsSmaller#f/1@bd21941i with 1 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate PointlessComparison::alwaysGT#cpe#123#bff/3@b0b8f435
+[2022-04-01 12:00:08] (0s)  >>> Created relation PointlessComparison::alwaysGT#cpe#123#bff/3@b0b8f435 with 251 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate PointlessComparison::alwaysLE#cpe#123#bff/3@74af87h2
+[2022-04-01 12:00:08] (0s)  >>> Created relation PointlessComparison::alwaysLE#cpe#123#bff/3@74af87h2 with 0 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate PointlessComparison::alwaysGE#cpe#123#bff/3@a9a3caom
+[2022-04-01 12:00:08] (0s)  >>> Created relation PointlessComparison::alwaysGE#cpe#123#bff/3@a9a3caom with 3 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate PointlessComparison::pointlessComparison#fffff/5@d96ae047
+[2022-04-01 12:00:08] (0s)  >>> Created relation PointlessComparison::pointlessComparison#fffff/5@d96ae047 with 254 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate PointlessComparison::reachablePointlessComparison#fffff/5@faa73f0f
+[2022-04-01 12:00:08] (0s)  >>> Created relation PointlessComparison::reachablePointlessComparison#fffff/5@faa73f0f with 254 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate project#PointlessComparison::reachablePointlessComparison#fffff/2@3be70atk
+[2022-04-01 12:00:08] (0s)  >>> Created relation project#PointlessComparison::reachablePointlessComparison#fffff/2@3be70atk with 254 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate BasicBlocks::Cached::basic_block_member#fff_120#join_rhs/3@5e8068ge
+[2022-04-01 12:00:08] (0s)  >>> Created relation BasicBlocks::Cached::basic_block_member#fff_120#join_rhs/3@5e8068ge with 96788 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate BasicBlocks::BasicBlock::getEnd_dispred#ff/2@c7f40853
+[2022-04-01 12:00:08] (0s)  >>> Created relation BasicBlocks::BasicBlock::getEnd_dispred#ff/2@c7f40853 with 11588 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate BasicBlocks::BasicBlock::getEnd_dispred#ff_10#join_rhs/2@612fd7dp
+[2022-04-01 12:00:08] (0s)  >>> Created relation BasicBlocks::BasicBlock::getEnd_dispred#ff_10#join_rhs/2@612fd7dp with 11588 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate BasicBlocks::BasicBlock::getATrueSuccessor_dispred#ff/2@dc862fnq
+[2022-04-01 12:00:08] (0s)  >>> Created relation BasicBlocks::BasicBlock::getATrueSuccessor_dispred#ff/2@dc862fnq with 5406 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate BasicBlocks::BasicBlock::getAFalseSuccessor_dispred#ff/2@cac1ac9s
+[2022-04-01 12:00:08] (0s)  >>> Created relation BasicBlocks::BasicBlock::getAFalseSuccessor_dispred#ff/2@cac1ac9s with 5177 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdge#ffff/4@f4db1477
+[2022-04-01 12:00:08] (0s)  >>> Created relation InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdge#ffff/4@f4db1477 with 2 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate project#InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdge#ffff/2@72fe03nb
+[2022-04-01 12:00:08] (0s)  >>> Created relation project#InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdge#ffff/2@72fe03nb with 2 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate InfiniteLoopWithUnsatisfiableExitCondition::enhancedSucc#ff/2@036b9c36
+[2022-04-01 12:00:08] (0s)  >>> Created relation InfiniteLoopWithUnsatisfiableExitCondition::enhancedSucc#ff/2@036b9c36 with 16560 rows.
+[2022-04-01 12:00:08] (0s) Starting to evaluate predicate boundedFastTC(InfiniteLoopWithUnsatisfiableExitCondition::enhancedSucc#ff,function_entry_point_1#higher_order_body)/2@959324uk = HOP boundedFastTC(16560,417)
+[2022-04-01 12:00:08] (1s)  >>> Relation boundedFastTC(InfiniteLoopWithUnsatisfiableExitCondition::enhancedSucc#ff,function_entry_point_1#higher_order_body): 676754 rows using 0 MB
+[2022-04-01 12:00:08] (1s)  >>> Created relation boundedFastTC(InfiniteLoopWithUnsatisfiableExitCondition::enhancedSucc#ff,function_entry_point_1#higher_order_body)/2@959324uk with 676754 rows.
+[2022-04-01 12:00:08] (1s) Starting to evaluate predicate InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#higher_order_body/1@0db160ns
+[2022-04-01 12:00:08] (1s)  >>> Created relation InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#higher_order_body/1@0db160ns with 10916 rows.
+[2022-04-01 12:00:08] (1s) Starting to evaluate predicate boundedFastTC(InfiniteLoopWithUnsatisfiableExitCondition::enhancedSucc#ff,InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#higher_order_body)/2@b1843fto = HOP boundedFastTC(16560,10916)
+[2022-04-01 12:00:08] (1s)  >>> Relation boundedFastTC(InfiniteLoopWithUnsatisfiableExitCondition::enhancedSucc#ff,InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#higher_order_body): 690675 rows using 0 MB
+[2022-04-01 12:00:08] (1s)  >>> Created relation boundedFastTC(InfiniteLoopWithUnsatisfiableExitCondition::enhancedSucc#ff,InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#higher_order_body)/2@b1843fto with 690675 rows.
+[2022-04-01 12:00:08] (1s)  >>> Created relation functions/3@d321a3di with 1285 rows.
+[2022-04-01 12:00:08] (1s) Starting to evaluate predicate BasicBlocks::ExitBasicBlock#class#f/1@e84aa9ss
+[2022-04-01 12:00:08] (1s)  >>> Created relation BasicBlocks::ExitBasicBlock#class#f/1@e84aa9ss with 419 rows.
+[2022-04-01 12:00:08] (1s) Starting to evaluate predicate InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#antijoin_rhs/1@7f4721of
+[2022-04-01 12:00:08] (1s)  >>> Created relation InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#antijoin_rhs/1@7f4721of with 10591 rows.
+[2022-04-01 12:00:08] (1s) Starting to evaluate predicate InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#shared/1@6c7b68je
+[2022-04-01 12:00:08] (1s)  >>> Created relation InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#shared/1@6c7b68je with 325 rows.
+[2022-04-01 12:00:08] (1s) Starting to evaluate predicate project#InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdge#ffff#2/3@26ab1bkc
+[2022-04-01 12:00:08] (1s)  >>> Created relation project#InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdge#ffff#2/3@26ab1bkc with 2 rows.
+[2022-04-01 12:00:08] (1s) Starting to evaluate predicate project#InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdge#ffff#2_201#join_rhs/3@52a09ccr
+[2022-04-01 12:00:08] (1s)  >>> Created relation project#InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdge#ffff#2_201#join_rhs/3@52a09ccr with 2 rows.
+[2022-04-01 12:00:08] (1s) Starting to evaluate predicate project#InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdge#ffff#2_2#join_rhs/1@f1a1854o
+[2022-04-01 12:00:08] (1s)  >>> Created relation project#InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdge#ffff#2_2#join_rhs/1@f1a1854o with 2 rows.
+[2022-04-01 12:00:08] (1s) Starting to evaluate predicate InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#higher_order_body#1/1@d8d5b732
+[2022-04-01 12:00:08] (1s)  >>> Created relation InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#higher_order_body#1/1@d8d5b732 with 0 rows.
+[2022-04-01 12:00:08] (1s) Starting to evaluate predicate boundedFastTC(BasicBlocks::Cached::bb_successor_cached#ff,InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#higher_order_body#1)/2@6575b2ro = HOP boundedFastTC(16562,0)
+[2022-04-01 12:00:08] (1s)  >>> Relation boundedFastTC(BasicBlocks::Cached::bb_successor_cached#ff,InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#higher_order_body#1): 0 rows using 0 MB
+[2022-04-01 12:00:08] (1s)  >>> Created relation boundedFastTC(BasicBlocks::Cached::bb_successor_cached#ff,InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#higher_order_body#1)/2@6575b2ro with 0 rows.
+[2022-04-01 12:00:08] (1s) Inferred that InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff/2@ec910ckh is empty, due to boundedFastTC(BasicBlocks::Cached::bb_successor_cached#ff,InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff#higher_order_body#1)/2@6575b2ro.
+[2022-04-01 12:00:08] (1s) Inferred that #select#ff/2@7e5d73qc is empty, due to InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff/2@ec910ckh.
+[2022-04-01 12:00:08] (1s) Inferred that Expr::Expr::getLocation_dispred#bf/2@f6df16ep is empty, due to #select#ff/2@7e5d73qc.
+[2022-04-01 12:00:08] (1s) Inferred that #select#query#ffffffff/8@b48ab5i3 is empty, due to #select#ff/2@7e5d73qc.
+[2022-04-01 12:00:08] (1s) Inferred that project#Expr::Expr::getLocation_dispred#bf/1@29f7828i is empty, due to Expr::Expr::getLocation_dispred#bf/2@f6df16ep.
+[2022-04-01 12:00:08] (1s) Inferred that #select#query#ffffffff#shared/3@a8da98kt is empty, due to Expr::Expr::getLocation_dispred#bf/2@f6df16ep.
+[2022-04-01 12:00:08] (1s) Inferred that Location::Location::hasLocationInfo_dispred#bfffff/6@af7777n5 is empty, due to project#Expr::Expr::getLocation_dispred#bf/1@29f7828i.
+[2022-04-01 12:00:08] (1s) Inferred that #select#query#ffffffff#antijoin_rhs/2@2b6d698s is empty, due to #select#query#ffffffff#shared/3@a8da98kt.
+[2022-04-01 12:00:08] (1s)  >>> Created relation #select#ff/2@7e5d73qc with 0 rows.
+[2022-04-01 12:00:08] (1s)  >>> Created relation Expr::Expr::getLocation_dispred#bf/2@f6df16ep with 0 rows.
+[2022-04-01 12:00:08] (1s)  >>> Created relation InfiniteLoopWithUnsatisfiableExitCondition::impossibleEdgeCausesNonTermination#ff/2@ec910ckh with 0 rows.
+[2022-04-01 12:00:08] (1s)  >>> Created relation #select#query#ffffffff/8@b48ab5i3 with 0 rows.
+[2022-04-01 12:00:08] (1s)  >>> Created relation #select#query#ffffffff#shared/3@a8da98kt with 0 rows.
+[2022-04-01 12:00:08] (1s)  >>> Created relation Location::Location::hasLocationInfo_dispred#bfffff/6@af7777n5 with 0 rows.
+[2022-04-01 12:00:08] (1s)  >>> Created relation project#Expr::Expr::getLocation_dispred#bf/1@29f7828i with 0 rows.
+[2022-04-01 12:00:08] (1s)  >>> Created relation #select#query#ffffffff#antijoin_rhs/2@2b6d698s with 0 rows.
+[2022-04-01 12:00:08] (1s) Query done
+[2022-04-01 12:00:08] (1s) Sequence stamp origin is -6472220197468843182
+[2022-04-01 12:00:08] (1s) Pausing evaluation to sync to disk at sequence stamp o+0
+[2022-04-01 12:00:08] (1s) Unpausing evaluation
+[2022-04-01 12:00:08] Evaluation of /Users/owura/Repos/codeql-home/codeql-repo/cpp/ql/src/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql produced BQRS results.
+[2022-04-01 12:00:09] [PROGRESS] execute queries> [1/1 eval 1.4s] Evaluation done; writing results to codeql/cpp-queries/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.bqrs.
+[2022-04-01 12:00:09] [PROGRESS] execute queries> Shutting down query evaluator.
+[2022-04-01 12:00:09] Pausing evaluation to close the cache at sequence stamp o+1
+[2022-04-01 12:00:09] The disk cache is freshly trimmed; leave it be.
+[2022-04-01 12:00:09] Unpausing evaluation
+[2022-04-01 12:00:09] Terminating normally.

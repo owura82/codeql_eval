@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: "/Users/owura/Repos/codeql_eval/proj_repos/curl-curl-commit-ba1dbd78e5f1ed67c1b8d37ac89d90e5e330b628/curl"
+baselineLinesOfCode: 126730
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  sha: "ba1dbd78e5f1ed67c1b8d37ac89d90e5e330b628"
+  cliVersion: "2.8.0"
+  creationTime: "2022-03-29T22:22:42.208541Z"

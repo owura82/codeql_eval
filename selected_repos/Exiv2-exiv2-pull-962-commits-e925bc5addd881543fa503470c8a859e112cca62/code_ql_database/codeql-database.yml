@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: "/Users/owura/Repos/codeql_eval/proj_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/exiv2"
+baselineLinesOfCode: 81708
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  sha: "e925bc5addd881543fa503470c8a859e112cca62"
+  cliVersion: "2.8.0"
+  creationTime: "2022-03-21T21:41:46.798718Z"

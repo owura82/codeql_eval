@@ -1,0 +1,35 @@
+---
+sourceLocationPrefix: "/Users/owura/Repos/codeql_eval/selected_repos/Exiv2-exiv2-pull-962-commits-e925bc5addd881543fa503470c8a859e112cca62/check_fixed/exiv2"
+baselineLinesOfCode: 81709
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+inProgress:
+  primaryLanguage: "cpp"
+  installedExtractors:
+    go:
+    - "file:///Users/owura/repos/codeql-home/codeql/go/"
+    python:
+    - "file:///Users/owura/repos/codeql-home/codeql/python/"
+    java:
+    - "file:///Users/owura/repos/codeql-home/codeql/java/"
+    html:
+    - "file:///Users/owura/repos/codeql-home/codeql/html/"
+    xml:
+    - "file:///Users/owura/repos/codeql-home/codeql/xml/"
+    properties:
+    - "file:///Users/owura/repos/codeql-home/codeql/properties/"
+    cpp:
+    - "file:///Users/owura/repos/codeql-home/codeql/cpp/"
+    csv:
+    - "file:///Users/owura/repos/codeql-home/codeql/csv/"
+    csharp:
+    - "file:///Users/owura/repos/codeql-home/codeql/csharp/"
+    javascript:
+    - "file:///Users/owura/repos/codeql-home/codeql/javascript/"
+    ruby:
+    - "file:///Users/owura/repos/codeql-home/codeql/ruby/"
+creationMetadata:
+  sha: "e925bc5addd881543fa503470c8a859e112cca62"
+  cliVersion: "2.8.0"
+  creationTime: "2022-04-03T18:51:26.030042Z"
